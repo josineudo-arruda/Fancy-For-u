@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*
+colors:
+ #3b4664
+ #ea9fa3
+ #ffdbdb
+ #ffffff
+ #aaaaaa
+*/
+body {
+    background-color: white;
+    font-family:'Times New Roman', Times, serif !important;
+}
+p {
+    text-indent: 50px;
+    text-align: justify;
+}
+/*Formatação da navbar*/
+div#interface img.search-image {
+    width: 22px;
+}
+.bg-blue {
+    background-color: #3b4664 !important;
+}
+div#interface .navbar-brand {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+div#interface .nav-item {
+    font-size: 20px !important;
+}
+/*Fim da formatação da navbar*/
+/*Formatação do carrossel*/
+div.carousel-indicators button {
+    padding: 1px 20px 3px 3px;
+    margin: 1px;
+    margin-bottom: 15px;
+    background-color: rgb(125, 124, 221);
+}
+div#carouselExampleIndicators {
+    margin-top: -1px;
+}
+.carousel-inner img {
+    max-height: 700px !important;
+}
+/*Fim da formatação do carrossel*/
+/*Formatação das sinopses*/
+section#recomedations {
+    padding: 20px;
+}
+section#recomedations h2 {
+    color: #3b4664 !important;
+    font-weight: bold;
+}
+section#recomedations div.text {
+    padding: 10px;
+}
+section#recomedations button.bg-rose {
+    background-color: #ffdbdb !important;
+    color: #3b4664;
+}
+section#recomedations div.border-bottom {
+    padding: 20px;
+    border-color: #ffdbdb !important;
+}
+section#recomedations img.img-responsive {
+    padding: 20px;
+}
+section#recomedations p {
+    font-size: 18px;
+}
+section#recomedations div.movie03 img {
+    margin-top: 10px;
+} 
+section#recomedations div.movie04 img {
+    margin-top: 10px !important;
+} 
+section#recomedations div.movie04 div.col-lg-6 img {
+    margin-top: 5px !important;
+}
+/*Fim da formatação das sinopses*/
+/*Formatação trailer*/
+section#carouselTrailers {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+section#carouselTrailers img {
+    padding: 10px;
+    border: none;
+    position: relative;
+}
+.color {
+    border: #3b4664 3px solid;
+    background-color: #3b4664;
+    border-radius:0 0 20px 20px; 
+    -moz-border-radius: 0 0 20px 20px; 
+    -webkit-border-radius: 0 0 20px 20px;
+}
+.color-img  {
+    border: #3b4664 2px solid !important;
+    background-color: #3b4664;
+    border-radius: 10px 10px 0 0; 
+    -moz-border-radius: 10px 10px 0 0; 
+    -webkit-border-radius: 10px 10px 0 0;
+}
+div#presentationTrailers iframe {
+    position: absolute;
+    width:100%;
+    height:100%;
+    padding: 30px !important;
+    border-top: rgba(84, 82, 204, 0.185) 1px solid !important;
+    border-spacing: 10px;
+    border: none;
+}
+div#presentationTrailers {
+    margin-top: -1px;
+}
+div#presentationTrailers {
+    position: relative;
+    width:100%;
+    padding-bottom: 56.25%;
+}
+h3.color-text {
+    border: #3b4664 3px solid;
+    background-color: #3b4664;
+    margin-top: -1px !important;
+    margin-bottom: -1px !important;
+    color: #ffffff !important;
+    padding: 10px 5px 10px 20px;
+}
+/*fim formatação trailer*/
+/*Formatando os atores*/
+section#actors img {
+    margin-top: 25px;
+}
+section.border-top {
+    margin-top: 40px !important;
+    padding: 20px;
+    border-color: #ffdbdb !important;
+}
+section#actors h3 {
+    margin-top: 10px;
+}
+section#actors a {
+    color: #3b4664;
+}
+section#actors {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+section#actors button {
+    width: 100% !important;
+}
+section#actors a {
+    width: 100% !important;
+}
+/*Fim da formatando dos atores*/
+
+/*Formatando do rodapé*/
+footer#footnote p.text {
+    padding-top: 20px !important;
+} 
+footer#footnote div{
+    color: #3b4664; 
+}
+footer#footnote .bg-rose {
+    background-color: rgb(234,159,163,.7) !important;
+}
+div.text-center h2 {
+    font-size: 28px;
+}
+footer#footnote h4 {
+    font-size: 30px !important;
+    padding: 15px 10px 10px 10px !important;
+    text-decoration: none;
+}
+footer#footnote a {
+    color: #3b4664;
+}
+footer#footnote .border-bottom {
+    border-color: #ffdbdb !important;
+}
+div.text-center .button-size {
+    font-size: 14px;
+}
+/*Fim da formatação do rodapé*/

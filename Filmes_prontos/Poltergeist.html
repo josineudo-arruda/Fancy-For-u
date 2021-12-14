@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Poltergeist</title>
+
+    <style>
+
+      body {
+    background-color: white;
+    font-family:'Times New Roman', Times, serif !important;
+}
+   p {
+    text-indent: 50px;
+    text-align: justify;
+    }
+
+    div#interface img.search {
+    width: 22px;
+}
+.bg-blue {
+    background-color: #3b4664 !important;
+}
+div#interface .navbar-brand {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+div#interface .nav-item {
+    font-size: 20px !important;
+}
+
+#footnote p.text {
+    padding-top: 20px !important;
+} 
+#footnote div{
+    color: #3b4664; 
+}
+#footnote .bg-rose {
+    background-color: rgb(234,159,163,.7) !important;
+}
+#footnote h4 {
+    font-size: 30px !important;
+    padding: 15px 10px 10px 10px !important;
+    text-decoration: none;
+}
+#footnote a {
+    color: #3b4664;
+}
+#footnote a:hover {
+    text-decoration-color: #3b4664;
+}
+#footnote .border-bottom {
+    border-color: #ffdbdb !important;
+}
+
+     #poltergeist-photo {
+      margin-bottom: 20px;
+         border-width: 1px;
+   border-style: solid;
+   border-color: pink #3b4664;
+   margin-top: 150px;
+     }
+
+     .info-poltergeist {
+          width: 90%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+     }
+
+     #sinopse-poltergeist {
+       margin-bottom: 2px;
+       color: #3b4664;
+     }
+
+     #poltergeist-sinopse{
+       width: 90%;
+       margin-bottom: 30px;
+       margin-top: 10px;
+     }
+     .border {
+          color: #3b4664;
+     }
+
+     #pic1-poltergeist {
+      margin-bottom: 20px;
+         border-width: 1px;
+   border-style: solid;
+   border-color: pink #3b4664;
+       margin-bottom: 10px;
+     }
+  
+
+     #pic2-poltergeist {
+       margin-bottom: 20px;
+         border-width: 1px;
+   border-style: solid;
+   border-color: pink #3b4664;
+       margin-bottom: 10px;
+     }
+
+     #pic3-poltergeist {
+      margin-bottom: 20px;
+         border-width: 1px;
+   border-style: solid;
+   border-color: pink #3b4664;
+       margin-bottom: 20px;
+     }
+
+     #pic4-poltergeist {
+       margin-bottom: 20px;
+         border-width: 1px;
+   border-style: solid;
+   border-color: pink #3b4664;
+       margin-bottom: 20px;
+     }
+
+     #border-curiosidades {
+        color: #3b4664;
+     }
+
+     .poltergeist-curiosidades {
+        max-width: 100%;
+     }
+
+     #link-poltergeist {
+          margin-left: 20px;
+          margin-bottom: 20px;
+           color: #3b4664;
+     }
+
+     .info-poltergeist-color {
+       color: #3b4664;
+     }
+
+      a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: #ffdbdb;
+}
+
+  #nome-filme {
+      margin-top: 150px;
+      color: #3b4664;
+ }
+
+ div#fashion.border-top {
+   border-color: #ffdbdb !important;
+    margin-top: 10px;
+         color: #3b4664;
+ }
+
+  div.fashion.border-top {
+   border-color: #ffdbdb !important;
+    margin-top: 10px;
+         color: #3b4664;
+ }
+
+  .avaliacao {
+       border-bottom: 1px solid pink;
+       color: #3b4664;
+       margin-top: 10px;
+       margin-left: 5px;
+ }
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 > label {
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+}
+
+.feedback1 {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+a#link-poltergeist {
+   padding: 10px;
+ }
+
+.rating1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+ </style>
+    <script>
+      var peopleAvaliation = 5; 
+      var media = 4.5 ;
+    function Rating(value) {
+      var originalMedia = media * peopleAvaliation;
+      peopleAvaliation++;
+      var finalMedia = (originalMedia + value) / peopleAvaliation;
+      var final = parseFloat(finalMedia.toFixed(1));
+
+      document.getElementById("valorConvertido").innerHTML = (final+" ("+peopleAvaliation+")");
+      media = final;
+    }
+    </script>
+    <script language="javascript" src="../javascript/pesquisa-logica.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div id="interface">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+          <a class="navbar-brand" href="../index.html">Fancy For U</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filmes</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="../anos-70.html">70's</a>
+                          <a class="dropdown-item" href="../anos-80.html">80's</a>
+                          <a class="dropdown-item" href="../anos-90.html">90's</a>
+                          <a class="dropdown-item" href="../anos-2000.html">2000's</a>
+                      </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="../pesquisa.html" method="get">
+                  <input class="form-control mr-sm-2 ml-2 my-3" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit" class="button-search">
+                      <img src="../images/pesquisa-icone.png" class="search-image" alt="">
+                  </button>
+              </form>
+              <a href="../quiz.html"><button class="btn btn-outline-light font-weight-bold my-2 ml-2 " type="button" > Quiz</button></a>
+          </div>
+      </nav>
+  </div>
+
+ <div class="container">
+  <div class="row">
+
+  <div class="col-sm-12 col-md-12 col-lg-4">
+<img id="poltergeist-photo" src="https://cinemacomrapadura.com.br/imagens/2015/03/20150331-principal-ccr4.png"  style="width:100%" class="img-fluid img-rounded">
+ </div>
+
+ <div class="col-sm-12 col-md-12 col-lg-8">
+ <h1 id="nome-filme"><strong>Poltergeist</strong></h1>
+ <div class="info-poltergeist"><strong class="info-poltergeist-color">Lançamento:</strong> 19 de agosto de 1982.  <br>
+ <strong class="info-poltergeist-color">Direção:</strong> 	Tobe Hooper.<br>
+ <strong class="info-poltergeist-color">Roteiro:</strong> Steven Spielberg, Steven Spielberg.<br>
+ <strong class="info-poltergeist-color">Elenco:</strong>  Craig T. Nelson, JoBeth Williams, Heather O'Rourke.<br>
+ <strong class="info-poltergeist-color">Gênero:</strong> Suspense, Terror<br></div>
+
+ <h4 id="sinopse-poltergeist"><strong>Sinopse</strong></h4>
+
+ <p id="poltergeist-sinopse" class="text-justify">Família é visitada por fantasmas, que inicialmente se manifestam apenas movendo objetos pela casa,
+ mas gradativamente vão aterrorizando-os cada vez mais, chegando a sequestrar a caçula através do televisor.
+ Os pais se desesperam e uma especialista em fenômenos paranormais sugere que eles busquem a ajuda de uma mulher com poderes mediúnicos.
+</p> </div> </div> 
+
+
+    <div class="container">
+  <div id="fashion" class="border-top">
+ <div id="fashion"><h1><strong>Moda</strong></h1></div> </div></div>
+
+ <div class="row">
+
+ <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic1-poltergeist"src="https://cdn.discordapp.com/attachments/700107574493577260/911339968457228308/pol1.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+<div class="col-sm-12 col-md-6 col-lg-6"><img id="pic3-poltergeist"src="https://cdn.discordapp.com/attachments/700107574493577260/911340021049598012/pol2.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>    
+   <div class="w-100"></div>
+ 
+      <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic2-poltergeist"src="https://cdn.discordapp.com/attachments/700107574493577260/911340110790918185/pol4.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+ <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic4-poltergeist"src="https://cdn.discordapp.com/attachments/700107574493577260/911340148468367380/pol5.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+
+ </div>
+
+  <div class="container">
+  <div class="row border-top fashion">
+ <h1 class="col-sm-12 col-md-12 col-lg-8" id="border-curiosidades"><strong>Curiosidades</strong></h1>
+  </div></div>
+
+  <ul>
+
+ <li><p class="poltergeist-curiosidades">Comecemos com as duas mortes mais significativas de pessoas envolvidas com o filme, 
+ a primeira é de Dominique Dunne, jovem atriz que fez o papel de Dana, filha mais velha da família Freeling. 
+ Em novembro de 1982 Dominique aos 22 anos foi morta por estrangulamento pelo namorado John Sweeney,
+ um ajudante de cozinha que trabalhava no Ma Maison um dos maiores restaurantes de West Hollywood, John era extremamente 
+ ciumento principalmente após o sucesso do filme. Quando ele começou a agredi-la, Dominique resolveu que era hora de terminar,
+ mas Jonh não aceitou. Ele invadiu a casa dela e a estrangulou. John foi preso e condenado a 6 anos de prisão, mas ficou somente
+ 3 anos. </p> </li>
+
+  <li><p class="poltergeist-curiosidades">A segunda morte é de Heather O’Rourke, atriz que interpretou a pequena Carol 
+  Anne nos três filmes da série. Em 1987 ela foi diagnosticada como tendo a Doença de Crohn, sendo esta uma infecção 
+  gastrointestinal que afeta a parte inferior do intestino delgado (Íleo) e o intestino grosso (cólon), à menina foram
+  receitados remédios muito fortes para o tratamento da doença, deixando ela com o rosto inchado, isso é perceptível principalmente
+  no terceiro filme da série. Em fevereiro de 1988 com apenas 12 anos de idade a jovem Heather sofreu uma parada cardíaca
+  morrendo horas depois no hospital. Os familiares de O’Rourke entraram com uma ação contra o hospital, alegando que o diagnostico
+  feito afirmando que ela tinha Doença de Crohn estava errado, na realidade ela sofria de um bloqueio no intestino e caso 
+  o bloqueio tive sido diagnosticado desde o começo, uma cirurgia teria resolvido todo o problema. </p> </li>
+
+  <li><p class="poltergeist-curiosidades"> Além das duas mortes, houve acontecimentos estranhos com outras pessoas envolvidas com os filmes. Zelda Rubinstein, atriz que fez o papel da médium Tangina Barrons nos três filmes da série, contou que durante uma seção de fotos promocionais para Poltergeist III, aparece uma estranha fumaça em uma das fotos, depois ela contou que a tal foto foi tirada no exato momento em que sua mãe morreu.  </p> </li>
+
+  <li><p class="poltergeist-curiosidades">Uma suposta explicação para as maldições que ocorreram com essa série de filmes, foi que os produtores teriam resolvido adquirir esqueletos humanos reais, pois sairia mais barato do que construir esqueletos falsos de plástico. Portanto teoriza-se que os espíritos das pessoas as quais os ossos pertenciam foram responsáveis pelas tragédias e fatos bizarros que ocorreram com as pessoas envolvidas com o longa. Tobe Hooper e Steven Spielberg nunca falaram no assunto.
+ </p> </li>
+
+  <li><p class="poltergeist-curiosidades">A atriz JoBeth Williams, que viveu a mãe da família do filme, relatou uma coisa bem estranha. Um dia ela chegou em casa e todos os quadros de sua decoração estavam tortos. Ela os arrumou e, no dia seguinte, foi trabalhar normalmente. Quando voltou, os quadros estavam novamente fora do lugar e isso se repetiu diversas vezes. A atriz contou que não tinha como outra pessoa fazer aquilo. </p> </li>
+
+  <li><p class="poltergeist-curiosidades">Morte de Brian Gibson - ele foi diretor de Poltergeist II o outro lado. E assim como os demais, ele sofreu com esta lenda também. Mas no caso dele, a doença que o matou é real. Mas a forma como foi contada. A doença denominada sarcoma de Ewing é um tumor ósseo que vitimou o diretor em 2004.  A doença é acompanha de um texto que sempre diz que Ewing raramente é encontrada em adultos, que seu maior alvo é em jovens de 10-20 anos e brancos, em outros lugares a idade varia entre 5-25 anos. Em outro texto que cita o sarcoma, fala que é raro atingir negros e asiáticos.  </p> </li>
+
+   <li><p class="poltergeist-curiosidades">Pelo INCA, realmente o sarcoma é predominante (mais comum, não unicamente) observado em crianças e adultos jovens e é raro em negros e asiáticos. Este texto carregado de misticismo e fato nos faz pensar que o diretor tenha sido acometido por uma doença raramente observada em adultos, especialmente com idade avançada. No entanto como o próprio relatório do instituto abre a possibilidade da ‘invenção’, a própria causa é considerada desconhecida e não influenciável por genes (não é hereditária). Outro ponto importante é que, a versão fala que atinge raramente negros e asiáticos é a passagem mais encontrada, no entanto, Brian Gibson é branco. </p> </li> </ul>
+
+  <a id="link-poltergeist" class="button" target="_blank" href="https://www.tudosobreseufilme.com.br/2016/04/13-curiosidades-sobre-o-filme.html#:~:text=Poltergeist%20se%20tornou%20um%20dos%20c%C3%A9lebres%20filmes%20amaldi%C3%A7oados,de%20Dana%2C%20filha%20mais%20velha%20da%20fam%C3%ADlia%20Freeling.">Saber mais+</a>
+
+  </div>
+  </div>
+
+ <div class="media"></div>
+<div class="container">
+      <h1 class="avaliacao" id="valor"><strong>Avaliações de usuários</strong></h1>
+          <div class="feedback">
+              <div class="rating">
+                <h3 id="valorConvertido"></h3>
+              <input type="radio" name="rating" id="rating-5">
+              <label for="rating-5" type="submit" onclick="Rating(5)" class="rate-1" size="2"></label>
+              <input type="radio" name="rating" id="rating-4" size="2">
+              <label for="rating-4" type="submit" onclick="Rating(4)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-3" size="2">
+              <label for="rating-3" type="submit" onclick="Rating(3)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-2" size="2">
+              <label for="rating-2" type="submit" onclick="Rating(2)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-1" size="2">
+              <label for="rating-1" type="submit" onclick="Rating(1)" class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+       <div class="container">
+      <h1 class="avaliacao"><strong>Avaliação crítica</strong></h1>
+          <div class="feedback1">
+              <div class="rating1">
+              <h2 class="avaliacao-critica">3.6</h2>
+              <div type="radio" name="rating1"></div>
+              <label for="rating-15" type="submit"size="2"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-14" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-13" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-12" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-11" type="submit"  class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+  <footer id="footnote" class="text-center text-lg-start bg-rose">
+        <div class="bg-rose">
+            <div class="ol-lg-6 col-md-12 mb-4 mb-md-0 border-bottom">
+                <h4 class="me-5"><a href="index.html">Fancy For U</a></h4>
+            </div>
+            <div class="container p-4 ">
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Quem somos?</h5>
+                        <p class="text">
+                            Uma equipe de 3 estudantes com objetivos de montar um site com os principios fundamentais de programação, almejamos todo conhecimento que iremos adquirir nesta jornada.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Projeto 2° ano</h5>
+                        <ul>
+                            <li>Josineudo Arruda</li>
+                            <li>Jéssica Raya</li>
+                            <li>Sabrina Ramos</li>
+                        </ul>
+                        <h5>IFSP - Campus São Paulo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgb(59,70,100,.8); color:#ffffff">Copyright &copy; 2021 - by Josineudo Arruda, Jéssica Raya e Sabrina Ramos
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

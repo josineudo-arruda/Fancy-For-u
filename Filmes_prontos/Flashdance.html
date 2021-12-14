@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Flashdance</title>
+
+    <style>
+
+     body {
+    background-color: white;
+    font-family:'Times New Roman', Times, serif !important;
+}
+   p {
+    text-indent: 50px;
+    text-align: justify;
+    }
+
+    div#interface img.search {
+    width: 22px;
+}
+.bg-blue {
+    background-color: #3b4664 !important;
+}
+div#interface .navbar-brand {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+div#interface .nav-item {
+    font-size: 20px !important;
+}
+
+#footnote p.text {
+    padding-top: 20px !important;
+} 
+#footnote div{
+    color: #3b4664; 
+}
+#footnote .bg-rose {
+    background-color: rgb(234,159,163,.7) !important;
+}
+#footnote h4 {
+    font-size: 30px !important;
+    padding: 15px 10px 10px 10px !important;
+    text-decoration: none;
+}
+#footnote a {
+    color: #3b4664;
+}
+#footnote a:hover {
+    text-decoration-color: #3b4664;
+}
+#footnote .border-bottom {
+    border-color: #ffdbdb !important;
+}
+
+     #flashdance-photo {
+          margin-top: 150px;
+           border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+
+     .info-flashdance {
+          width: 100%;
+          margin-top: 10px;
+     }
+
+     #sinopse-flashdance {
+       margin-bottom: 10px;
+       margin-top: 10px;
+       color: #3b4664;
+     }
+
+     #flashdance-sinopse{
+       max-width: 100%;
+       margin-bottom: 20px;
+     }
+     .border {
+          color: #3b4664;
+          margin-bottom: 20px;
+     }
+
+     #pic1-flashdance {
+       margin-bottom: 10px;
+        border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+  
+
+     #pic2-flashdance {
+       margin-bottom: 10px;
+        border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+
+     #pic4-flashdance {
+       margin-bottom: 20px;
+        border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+
+     #pic5-flashdance {
+       margin-bottom: 20px;
+        border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+ 
+     #border-curiosidades {
+        color: #3b4664;
+     }
+
+     .flashdance-curiosidades {
+        max-width: 100%;
+     }
+
+     #link-flashdance {
+          margin-left: 20px;
+          margin-bottom: 20px;
+           color: #3b4664;
+     }
+
+     .info-flashdance-color {
+       color: #3b4664;
+     }
+
+     a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: rgb(255, 204, 204);
+}
+
+  
+ #nome-filme {
+      margin-top: 150px;
+      color: #3b4664;
+ }
+
+ div#fashion.border-top {
+   border-color: #ffdbdb !important;
+    margin-top: 10px;
+         color: #3b4664;
+ }
+
+  div.fashion.border-top {
+   border-color: #ffdbdb !important;
+    margin-top: 10px;
+         color: #3b4664;
+ }
+
+  .avaliacao {
+       border-bottom: 1px solid #ffdbdb;
+       color: #3b4664;
+       margin-top: 10px;
+       margin-left: 5px;
+ }
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 > label {
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+}
+
+.feedback1 {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+a#link-flashdance {
+   padding: 10px;
+ }
+
+.rating1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+ </style>
+
+<script>
+  var peopleAvaliation = 5; 
+  var media = 4.5 ;
+ function Rating(value) {
+   var originalMedia = media * peopleAvaliation;
+   peopleAvaliation++;
+   var finalMedia = (originalMedia + value) / peopleAvaliation;
+   var final = parseFloat(finalMedia.toFixed(1));
+
+   document.getElementById("valorConvertido").innerHTML = (final+" ("+peopleAvaliation+")");
+   media = final;
+ }
+</script>
+    <script language="javascript" src="../javascript/pesquisa-logica.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+   <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div id="interface">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+          <a class="navbar-brand" href="../index.html">Fancy For U</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filmes</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="../anos-70.html">70's</a>
+                          <a class="dropdown-item" href="../anos-80.html">80's</a>
+                          <a class="dropdown-item" href="../anos-90.html">90's</a>
+                          <a class="dropdown-item" href="../anos-2000.html">2000's</a>
+                      </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="../pesquisa.html" method="get">
+                  <input class="form-control mr-sm-2 ml-2 my-3" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit" class="button-search">
+                      <img src="../images/pesquisa-icone.png" class="search-image" alt="">
+                  </button>
+              </form>
+              <a href="../quiz.html"><button class="btn btn-outline-light font-weight-bold my-2 ml-2 " type="button" > Quiz</button></a>
+          </div>
+      </nav>
+  </div>
+
+    <div class="container">
+  <div class="row">
+
+ <div class="col-sm-12 col-md-12 col-lg-4">
+<img id="flashdance-photo" src="https://abroadwayeaqui.com.br/wp-content/uploads/2013/02/flashdance_newlogo.jpg?w=419" style="width:100%" class="img-fluid img-rounded">
+</div>
+
+ <div class="col-sm-12 col-md-12 col-lg-8">
+ <h1 id="nome-filme"><strong>Flashdance</strong></h1>
+ <div class="info-flashdance"><strong class="info-flashdance-color">Lançamento:</strong> 15 de abril de 1983 <br>
+ <strong class="info-flashdance-color">Direção:</strong> 	Adrian Lyne<br>
+ <strong class="info-flashdance-color">Roteiro:</strong> Joe Eszterhas , Thomas Hedley Jr.<br>
+ <strong class="info-flashdance-color">Elenco:</strong> Jennifer Beals (Alex Owens), Michael Nouri (Nick), Lee Ving (Johnny C.), Cynthia Rhodes (Tina Tech), Kyle T. Hefner (Richie).<br>
+ <strong class="info-flashdance-color">Gênero:</strong> Drama , Musical , Romance<br></div>
+
+ <h4 id="sinopse-flashdance"><strong>Sinopse</strong></h4>
+
+ <p id="flashdance-sinopse" class="text-justify">Flashdance conta a divertida e emocionante história de Alex Owens (Jennifer Beals),
+ uma jovem de 18 anos, bonita e altamente determinada. Owens trabalha como metalúrgica durante o dia e à noite é uma exótica dançarina em uma casa noturna. 
+ O filme traz hits clássicos dos anos 80, incluindo as canções mais conhecidas da época como "Flashdance-What A Feeling" 
+ de Irene Cara e "Maniac" na voz de Michael Sembello. Esse filme, que propagou a moda de blusas de moleton rasgadas, 
+ numa combinação com meias de lã, traça toda a luta e trajetória de Alex, possuidora de muita garra e personalidade forte, 
+ na busca pelo amor ideal e, ainda, na realização do sonho de ser, um dia, aluna no Conservatório Pittsburgh de Dança.</p>
+   </div>
+    </div>
+
+ <div class="container">
+ <div id="fashion" class="row border-top">
+ <div id="fashion"><h1><strong>Moda</strong></h1>
+ </div>
+ </div></div>
+
+   <div class="row">
+  <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic1-flashdance"src="https://cdn.discordapp.com/attachments/700107574493577260/911317076826816582/flash1.jpg" style="width:100%" class="img-fluid img-rounded"> 
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic2-flashdance"src="https://cdn.discordapp.com/attachments/700107574493577260/911317289658359818/flash2.jpg" style="width:100%" class="img-fluid img-rounded"> 
+  </div>
+  <div class="w-100"></div>
+  <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic4-flashdance"src="http://es.web.img3.acsta.net/pictures/18/01/12/14/42/2790183.jpg" style="width:100%" class="img-fluid img-rounded"> 
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic5-flashdance"src="https://stuttgart-live.de/wp-content/uploads/2019/03/Flashdance_01_Photo_2Entertain-e1554712961485.jpg" style="width:100%" class="img-fluid img-rounded"> 
+  </div>
+  </div>
+
+  
+ <div class="container">
+ <div class="row border-top fashion">
+ <h1 class="col-sm-12 col-md-12 col-lg-8" id="border-curiosidades"><strong>Curiosidades</strong></h1>
+ </div></div>
+  <ul>
+
+ <li><p class="flashdance-curiosidades">Flashdance foi inspirado na vida de Maureen Marder, uma mulher que trabalhava de dia como operária e de noite como dançarina em Toronto, e que aspirava entrar numa prestigiosa escola de dança. Pouco antes da estréia do filme, Maureen assinou um contrato no qual autorizava a Paramount Pictures retratar sua vida no filme  pelo valor de 2.300 dólares. Após verificar o uso de coreografias do filme no vídeo da canção I’m Glad de Jennifer Lopez Maureen resolveu processar a Sony Corporation (realizadora do vídeo) e a Paramount Pictures, uma vez que o filme havia obtido cerca de 150 milhões de dólares, dos quais Maureen não teve parte.</p> </li>
+
+  <li><p class="flashdance-curiosidades">Em junho de 2006, a Corte de Apelação de San Francisco negou a apelação de Maureen. Os três juízes do caso concordaram que, quando da assinatura do contrato, não havia evidência de que ele estava sendo feito por meio de fraude, ainda que os valores possam ser considerados muito inferiores ao valor arrecadado nas bilheterias.</p> </li>
+
+  <li><p class="flashdance-curiosidades">Não é a atriz Jennifer Beals (que foi indicada ao Globo de Ouro pelo filme) que dança em todas as cenas. A  atriz-dançante foi substituída por dublês nas danças mais perigosas, até mesmo por um bailarino, Crazy Legs que faz o giro no chão.</p> </li>
+
+  <li><p class="flashdance-curiosidades">Giorgio Moroder é o cara por trás de grande parte das melodias do filme. Ele foi o responsável várias trilhas famosas dos 80s.</p></li>
+
+  <li><p class="flashdance-curiosidades">A camisola, que causou uma sensação de moda nos anos 80 , foi o resultado de um encolhimento inesperado. “Quando eu estava no colégio, eu tinha uma camisola favorita que havia permanecido no secador por muito tempo”, disse Beals ao Toronto Star em 2011. o buraco da camisola era muito pequeno pra passar minha cabeça entao eu cortei, eu usei ela em algumas audições e os produtores gostaram.</p> </li>
+
+  <li><p class="flashdance-curiosidades">A duble  do corpo de Jennifer, ” MARINE JAHAN” nunca recebeu os créditos no filme no qual a deixou profundamente magoada por anos. Depois de assistir a uma pré-visualização do filme, Jahan ficou irritada por descobrir o nome dela excluído dos créditos finais, Os produtores Jerry Bruckheimer e Don Simpson explicaram que seu nome estava ausente porque eles tiveram que cortar a duração dos créditos.</p> </li> </ul>
+
+  <a id="link-flashdance" class="button" target="_blank" href="https://revivendoanos80s.wordpress.com/2017/12/05/curiosidades-sobre-o-filme-flashdance/">Saber mais+</a>
+
+  </div>
+
+ <div class="media"></div>
+<div class="container">
+      <h1 class="avaliacao" id="valor"><strong>Avaliações de usuários</strong></h1>
+          <div class="feedback">
+              <div class="rating">
+                <h3 id="valorConvertido"></h3>
+              <input type="radio" name="rating" id="rating-5">
+              <label for="rating-5" type="submit" onclick="Rating(5)" class="rate-1" size="2"></label>
+              <input type="radio" name="rating" id="rating-4" size="2">
+              <label for="rating-4" type="submit" onclick="Rating(4)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-3" size="2">
+              <label for="rating-3" type="submit" onclick="Rating(3)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-2" size="2">
+              <label for="rating-2" type="submit" onclick="Rating(2)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-1" size="2">
+              <label for="rating-1" type="submit" onclick="Rating(1)" class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+       <div class="container">
+      <h1 class="avaliacao"><strong>Avaliação crítica</strong></h1>
+          <div class="feedback1">
+              <div class="rating1">
+              <h2 class="avaliacao-critica">3.9</h2>
+              <div type="radio" name="rating1"></div>
+              <label for="rating-15" type="submit"size="2"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-14" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-13" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-12" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-11" type="submit"  class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+   <footer id="footnote" class="text-center text-lg-start bg-rose">
+        <div class="bg-rose">
+            <div class="ol-lg-6 col-md-12 mb-4 mb-md-0 border-bottom">
+                <h4 class="me-5"><a href="index.html">Fancy For U</a></h4>
+            </div>
+            <div class="container p-4 ">
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Quem somos?</h5>
+                        <p class="text">
+                            Uma equipe de 3 estudantes com objetivos de montar um site com os principios fundamentais de programação, almejamos todo conhecimento que iremos adquirir nesta jornada.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Projeto 2° ano</h5>
+                        <ul>
+                            <li>Josineudo Arruda</li>
+                            <li>Jéssica Raya</li>
+                            <li>Sabrina Ramos</li>
+                        </ul>
+                        <h5>IFSP - Campus São Paulo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgb(59,70,100,.8); color:#ffffff">Copyright &copy; 2021 - by Josineudo Arruda, Jéssica Raya e Sabrina Ramos
+            </div>
+        </div>
+    </footer>
+  
+</body>
+</html>

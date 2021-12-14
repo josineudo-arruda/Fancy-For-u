@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+section#searched-movies {
+    margin-bottom: 50px;
+}
+
+section#searched-movies h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+section#searched-movies button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #3b4664 !important;
+    border-color: #3b4664;
+    color: white !important;
+}
+
+
+section#searched-movies img {
+    margin-top: 15px;
+}
+section#searched-movies {
+    width: 80% !important;
+    border: #3b4664 1px solid;
+    padding: 50px;
+}
+

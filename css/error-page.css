@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+footer#footnote {
+    margin-top: 30px !important;
+}
+
+div.row {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+h1 {
+    margin-top: 20px !important;
+    margin-bottom: 50px;
+    color: #3b4664 !important;
+}
+
+h3 {
+    color: #3b4664 !important;
+}
+
+div.col-sm-12 img{
+    padding: 30px;
+}
+div.col-md-6 img{
+    padding: 50px;
+}
+div.col-lg-6 img{
+    padding: 60px;
+}
+
+div#img-error img{
+    margin-top: -40px !important;
+}
+
+div.col-sm-12 h1,h3{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+section#movie-no-found {
+    width: 80% !important;
+    border: #3b4664 1px solid;
+}

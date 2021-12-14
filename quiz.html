@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel = "stylesheet" type= "text/css" href= "style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <style>
+
+            body {
+                background-color: "#ffffff" ;
+                color: #212529;
+                font-family:'Times New Roman', Times, serif !important;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.5;
+                margin: 0;
+                text-align: left;
+            }
+
+            .quizTitle{
+                font-family:'Times New Roman', Times, serif !important;
+                text-align: justify;
+                line-height: 1.5;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+
+            }
+
+            /*Formatação da navbar*/
+            div#interface img.search {
+                width: 22px;
+            }
+
+            .bg-blue {
+                background-color: #3b4664 !important;
+            }
+
+            div#interface .navbar-brand {
+                font-size: 30px !important;
+                color: #ffffff !important;
+            }
+
+            div#interface .nav-item {
+                font-size: 20px !important;
+            }
+            /*Fim da formatação da navbar*/
+
+            /*Formatando do rodapé*/
+            footer#footnote p.text {
+                padding-top: 20px !important;
+            } 
+
+            footer#footnote div{
+                color: #3b4664; 
+            }
+
+            footer#footnote .bg-rose {
+                background-color: rgb(234,159,163,.7) !important;
+            }
+
+            footer#footnote h4 {
+                font-size: 30px !important;
+                padding: 15px 10px 10px 10px !important;
+                text-decoration: none;
+            }
+
+            footer#footnote a {
+                color: #3b4664;
+            }
+
+            footer#footnote a:hover {
+                text-decoration-color: #3b4664;
+            }
+
+            footer#footnote .border-bottom {
+                border-color: #ffdbdb !important;
+            }
+
+            .container {
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .jumbotron {
+                color: rgb(234, 159, 163);
+                background-color: rgb(59, 70, 100);
+                font-family:'Times New Roman', Times, serif !important;
+                margin-bottom: 2rem;
+                padding: 2rem 1rem;
+                font-size: 50px;
+                text-align: center;
+            }
+
+            .section {
+                padding: 15px 0px 25px 6px;
+                text-align: justify;
+                line-height: 1.5;
+            }
+
+            .section:hover {
+                background-color: #f5f5f5;
+                transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+            }
+
+            .button, input[type="submit"] {
+                background-color: #d9edff;
+                border: 1px solid transparent;
+                border-radius: 0.25rem;
+                font-size: 0.95rem;
+                font-weight: 400;
+                line-height: 1.5;
+                padding: 0.375rem 0.75rem;
+                text-align: center;
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                vertical-align: middle;
+            }
+
+            button:hover {
+                background-color: rgb(255,219,219);
+                cursor: pointer;
+            }
+
+
+            input[type="text"] {
+                line-height: 1.8;
+                width: 25%;
+            }
+            
+            input[type="text"]:hover {
+                background-color: #f5f5f5;
+                transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+            }
+
+            .question {
+                margin: 10px;
+                background-color: #ffdbdb;
+            }
+
+            .aswerButton {
+                cursor: pointer;
+                text-align: center;
+                margin-bottom: 50px;
+                width: 100%
+            }
+
+            #answer {
+                margin: 10px;
+                text-align: center;
+            }
+
+</style>
+
+      <script language="javascript" src="../javascript/pesquisa-logica.js"></script>
+      <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+    </head>
+       
+        <body>
+
+            <script> 
+              var total = 0;
+              var buttonClicked1 = false;
+              var buttonClicked2 = false;
+              var buttonClicked3 = false;
+              var buttonClicked4 = false;
+              var buttonClicked5 = false;
+              var buttonClicked6 = false;
+              var buttonClicked7 = false;
+              var buttonClicked8 = false;
+              var buttonClicked9 = false;
+              var buttonClicked10 = false;
+
+
+              
+              function endResults() {
+                if(total  < 1) {
+                  document.getElementById("answer").innerHTML = 0;
+                } else {
+                  document.getElementById("answer").innerHTML = total;
+                }
+                
+            }
+
+                function buttonCheck1(id){
+
+                    if (buttonClicked1 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button1');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result1');
+    
+                    if (id == 'john-travolta.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked1 = true;
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked1 = true;
+                    }
+                }
+    
+                function buttonCheck2(id){
+
+                   if (buttonClicked2 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button2');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result2');
+    
+                    if (id == 'quarta-feira.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked2 = true;
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked2 = true
+                    }
+                }
+
+                function buttonCheck3(id){
+
+                    if (buttonClicked3 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button3');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result3');
+    
+                    if (id == 'los-angeles-estados-unidos.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked3 = true
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked3 = true
+                    }
+                }
+
+    
+                function buttonCheck4(id){
+
+                  if (buttonClicked4 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button4');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result4');
+    
+                    if (id == 'william-shakespeare.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked4 = true
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked4 = true
+                    }
+                }
+
+                function buttonCheck5(id){
+
+                  if (buttonClicked5 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button5');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result5');
+    
+                    if (id == 'california.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked5 = true
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked5 = true
+                    }
+                }
+
+                function buttonCheck6(id){
+
+                  if (buttonClicked6 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button6');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result6');
+    
+                    if (id == '4y.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked6 = true
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked6 = true
+                    }
+                }
+
+                function buttonCheck7(id){
+
+                  if (buttonClicked7 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button7');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result7');
+    
+                    if (id == 'carrie-katie-mary-cora.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked7 = true
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked7 = true
+                    }
+                }
+
+    
+                function buttonCheck8(id){
+
+                  if (buttonClicked8 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button8');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result8');
+    
+                    if (id == '1995.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked8 = true
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked8 = true
+                    }
+                }
+    
+                function buttonCheck9(id){
+
+                  if (buttonClicked9 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button9');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result9');
+    
+                    if (id == 'alex-owens.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked9 = true
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked9 = true
+                    }
+                }
+
+    
+                function buttonCheck10(id){
+
+                  if (buttonClicked10 == true){
+                      return
+                    }
+    
+                    var allBtn = document.getElementsByClassName('button10');
+                    for (i = 0; i < allBtn.length; ++i){
+                        allBtn[i].style.backgroundColor = '#ffdbdb';
+                    }
+    
+                    btn = document.getElementById(id);
+                    result = document.getElementById('result10');
+    
+                    if (id == 'ganhar-peso.'){
+                        btn.style.backgroundColor = '#73be73';
+                        result.innerHTML = 'Resposta correta!';
+                        result.style.color = '#0e6b0e';
+                        total++;
+                        buttonClicked10 = true
+                    }
+                    else{
+                        btn.style.backgroundColor = '#ed4d4d';
+                        result.innerHTML = 'Resposta incorreta!';
+                        result.style.color = '#d30000';
+                        buttonClicked10 = true
+                    }
+                }
+
+            </script>
+
+            
+            
+            <div id="interface">
+              <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+                  <a class="navbar-brand" href="index.html">Fancy For U</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+      
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filmes</a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="anos-70.html">70's</a>
+                                  <a class="dropdown-item" href="anos-80.html">80's</a>
+                                  <a class="dropdown-item" href="anos-90.html">90's</a>
+                                  <a class="dropdown-item" href="anos-2000.html">2000's</a>
+                              </div>
+                          </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0" action="pesquisa.html" method="get">
+                          <input class="form-control mr-sm-2 ml-2 my-3" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+                          <button class="btn btn-outline-light my-2 my-sm-0" type="submit" class="button-search">
+                              <img src="images/pesquisa-icone.png" class="search-image" alt="">
+                          </button>
+                      </form>
+                      <button class="btn btn-outline-light font-weight-bold my-2 ml-2 " type="button" onclick=""> Quiz</button>
+                  </div>
+              </nav>
+          </div>
+
+            <div class="container">
+                <div class="section">
+                  <br><br><br><br>
+                <h3> Qual o nome artístico do personagem principal do filme "Grease"? </h3>
+                <div class="row container">
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                  <button style="width:100%"id="john-travolta." type="button" name="quiz" onclick="buttonCheck1(this.id)" class="button1 question" style="background-color: rgb(255,219,219);"> John Travolta </button>  
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="joey-tribianni" type="button"  name="quiz" onclick="buttonCheck1(this.id)" class="button1 question" style="background-color: rgb(255,219,219);"> Joey Tribianni </button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="jim-carrey" type="button"  name="quiz" onclick="buttonCheck1(this.id)" class="button1 question" style="background-color: rgb(255,219,219);"> Jim Carrey </button>  
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button  style="width:100%" id="jesus" type="button"  name="quiz" onclick="buttonCheck1(this.id)" class="button1 question" style="background-color: rgb(255,219,219);"> Jesus </button>
+                  </div>
+                </div><br> <h4 id='result1'></h4> 
+            </div></div>
+
+            <div class="container">      
+            <div class="section">
+
+                <h3> De acordo com o filme "Meninas Malvadas", qual dia da semana usa-se rosa? </h3>
+                <div class="row container">
+                  <div  class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="segunda-feira" type="button" onclick="buttonCheck2(this.id)" class="button2 question" style="background-color: rgb(255,219,219);"> Segunda-feira </button>    
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="quarta-feira." type="button" onclick="buttonCheck2(this.id)" class="button2 question" style="background-color: rgb(255,219,219);"> Quarta-feira </button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="sexta-feira" type="button" onclick="buttonCheck2(this.id)" class="button2 question" style="background-color: rgb(255,219,219);"> Sexta-feira </button>  
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button id="nenhum" style="width:100%"type="button" onclick="buttonCheck2(this.id)" class="button2 question" style="background-color: rgb(255,219,219);"> Nenhum dia </button> 
+                </div>
+            </div> <br> <h4 id='result2'></h4>
+            </div>   </div>        
+            
+            <div class="container">
+            <div class="section">
+
+                <h3> No filme "As patricinhas de Beverly Hills", a Cher mora em que país e cidade? </h3>
+                <div class="row container">
+                  <div  class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="santiago-chile" type="button" onclick="buttonCheck3(this.id)" class="button3 question" style="background-color: rgb(255,219,219);"> Santiago, Chile </button>     
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="los-angeles-estados-unidos." type="button" onclick="buttonCheck3(this.id)" class="button3 question" style="background-color: rgb(255,219,219);"> Los Angeles, EUA</button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="havana-cuba" type="button" onclick="buttonCheck3(this.id)" class="button3 question" style="background-color: rgb(255,219,219);"> Havana, Cuba </button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="sydney-australia" type="button" onclick="buttonCheck3(this.id)" class="button3 question" style="background-color: rgb(255,219,219);"> Sydney, Austrália </button>
+                  </div>
+            </div> <br><h4 id='result3'></h4> 
+            </div>  </div>         
+            
+            <div class="container">
+            <div class="section">
+
+                <h3> O filme "10 coisas que eu odeio em você" é baseado numa obra de um autor famoso o qual a amiga de Kat tem uma paixão maluca, quem é esse autor? </h3>
+                <div class="row container">
+                  <div  class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="platao" type="button" onclick="buttonCheck4(this.id)" class="button4 question" style="background-color: rgb(255,219,219);"> Platão </button>    
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="william-shakespeare." type="button" onclick="buttonCheck4(this.id)" class="button4 question" style="background-color: rgb(255,219,219);"> William Shakespeare </button>  
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="john-green" type="button" onclick="buttonCheck4(this.id)" class="button4 question" style="background-color: rgb(255,219,219);"> John Green </button>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="augusto-cury" type="button" onclick="buttonCheck4(this.id)" class="button4 question" style="background-color: rgb(255,219,219);"> Augusto Cury </button>
+                  </div>
+            </div>  <br><h4 id='result4'></h4>
+            </div>   </div>
+
+            <div class="container">  
+            <div class="section">
+
+              <h3> A casa que foi usada para gravar o filme "Poltergeist" está localizada em qual estado? </h3>
+                <div class="row container">
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="idaho" type="button" onclick="buttonCheck5(this.id)" class="button5 question" style="background-color: rgb(255,219,219);"> Idaho </button>      
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="nova-york" type="button" onclick="buttonCheck5(this.id)" class="button5 question" style="background-color: rgb(255,219,219);"> Nova York </button>   
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="california." type="button" onclick="buttonCheck5(this.id)" class="button5 question" style="background-color: rgb(255,219,219);"> Califórnia </button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="nebraska" type="button" onclick="buttonCheck5(this.id)" class="button5 question" style="background-color: rgb(255,219,219);"> Nebraska </button>
+                  </div>
+            </div> <br><h4 id='result5'></h4> 
+            </div> 
+            </div></div>
+            
+            <div class="container">
+            <div class="section">
+                <h3> Quantos anos a noiva fica em coma no filme "Kill Bill"? </h3>
+                <div class="row container">
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="4y." type="button" onclick="buttonCheck6(this.id)" class="button6 question" style="background-color: rgb(255,219,219);"> 4 anos </button> 
+                  </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="5y" type="button" onclick="buttonCheck6(this.id)" class="button6 question" style="background-color: rgb(255,219,219);"> 5 anos </button> 
+                  </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="6y" type="button" onclick="buttonCheck6(this.id)" class="button6 question" style="background-color: rgb(255,219,219);"> 6 anos </button> 
+                  </div>  
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                <button style="width:100%" id="7y" type="button" onclick="buttonCheck6(this.id)" class="button6 question" style="background-color: rgb(255,219,219);"> 7 anos </button> 
+                  </div> 
+                
+              </div><br> <h4 id='result6'></h4>
+              </div></div></div>
+
+
+            <div class="container">  
+            <div class="section">
+                <h3> No filme "Carrie, a estranha", quais foram as convocadas para rainha do baile? </h3>
+                <div class="row container">
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="carrie-tina-sue" type="button" onclick="buttonCheck7(this.id)" class="button7 question" style="background-color: rgb(255,219,219);"> Carrie, Tina e Sue </button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="dina-tina-ruth" type="button" onclick="buttonCheck7(this.id)" class="button7 question" style="background-color: rgb(255,219,219);"> Dina, Tina e Ruth </button>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="ruth-tina" type="button" onclick="buttonCheck7(this.id)" class="button7 question" style="background-color: rgb(255,219,219);"> Ruth e Tina </button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="carrie-katie-mary-cora." type="button" onclick="buttonCheck7(this.id)" class="button7 question" style="background-color: rgb(255,219,219);"> Carrie, Katie, Mary e Cora </button> 
+                  </div>
+            </div> <br><h4 id='result7'></h4> 
+            </div> 
+            </div></div>
+
+            <div class="container">
+            <div class="section">
+
+                <h3> O filme "As patricinhas de Beverly Hills" foi lançado em que ano? </h3>
+                <div class="row container">
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="1978" type="button" onclick="buttonCheck8(this.id)" class="button8 question" style="background-color: rgb(255,219,219);"> 1978 </button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="1995." type="button" onclick="buttonCheck8(this.id)" class="button8 question" style="background-color: rgb(255,219,219);"> 1995 </button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="2000" type="button" onclick="buttonCheck8(this.id)" class="button8 question" style="background-color: rgb(255,219,219);"> 2000 </button> 
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="1998" type="button" onclick="buttonCheck8(this.id)" class="button8 question" style="background-color: rgb(255,219,219);"> 1998 </button> 
+                  </div>
+            </div><br><h4 id='result8'></h4>
+            </div></div>
+
+            <div class="container">
+            <div class="section">
+
+                <h3> Quem é o personagem principal do filme "Flashdance"? </h3>
+                <div class="row container">
+                  
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="alex-owens." type="button" onclick="buttonCheck9(this.id)" class="button9 question" style="background-color: rgb(255,219,219);"> Alex Owens </button> 
+                  </div>
+                  
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="tina-tech" type="button" onclick="buttonCheck9(this.id)" class="button9 question" style="background-color: rgb(255,219,219);"> Tina Tech </button> 
+                  </div>
+
+                     <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="chris-martin" type="button" onclick="buttonCheck9(this.id)" class="button9 question" style="background-color: rgb(255,219,219);"> Chris Martin </button> 
+                  </div>
+                
+                                     <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%" id="debbie-grant" type="button" onclick="buttonCheck9(this.id)" class="button9 question" style="background-color: rgb(255,219,219);"> Debbie Grant </button> 
+                  </div>
+                </div><br><h4 id='result9'></h4>
+                </div>
+                </div>
+                </div>
+
+               <div class="container">
+            <div class="section">
+                <h3> Em "Meninas malvadas", para que servia a barra de cereal que a Cady deu para a Regina? </h3>
+                <div class="row container">
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="fitness" type="button" onclick="buttonCheck10(this.id)" class="button10 question" style="background-color: rgb(255,219,219);"> Para ser fitness </button>  
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="perder-peso" type="button" onclick="buttonCheck10(this.id)" class="button10 question" style="background-color: rgb(255,219,219);"> Para perder peso </button>  
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="mais-sono" type="button" onclick="buttonCheck10(this.id)" class="button10 question" style="background-color: rgb(255,219,219);"> Para dormir mais </button>  
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <button style="width:100%"id="ganhar-peso." type="button" onclick="buttonCheck10(this.id)" class="button10 question" style="background-color: rgb(255,219,219);"> Para ganhar peso </button>
+                  </div>
+            </div><br><h4 id='result10'></h4>
+            </div>
+            </div>
+            </div>
+
+<div class="aswerButton">
+<button id="block"  name="quiz" id="aswer-button" type="button" onclick="endResults()" class="aswer-button" style="background-color:  rgb(59, 70, 100); color:#ffffff;"> Resultado final</button> <br>
+<h2 id="answer"></h2>
+</div>
+</div>
+
+
+    
+        <footer id="footnote" class="text-center text-lg-start bg-rose ">
+        <div class="bg-rose">
+            <div class="ol-lg-6 col-md-12 mb-4 mb-md-0 border-bottom">
+                <h4 class="me-5">Fancy For U</h4>
+            </div>
+            <div class="container p-4 ">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Quem somos?</h5>
+                        <p class="text">
+                            Uma equipe de 3 estudantes com objetivo de montar um site com os princípios fundamentais de programação. Almejamos todo conhecimento que iremos adquirir nesta jornada.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Projeto 2° ano</h5>
+                        <ul>
+                            <li>Josineudo Arruda</li>
+                            <li>Jéssica Raya</li>
+                            <li>Sabrina Ramos</li>
+                        </ul>
+                        <h5>IFSP - Campus São Paulo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgb(59,70,100,.8); color:#ffffff">Copyright &copy; 2021 - by Josineudo Arruda, Jéssica Raya e Sabrina Ramos
+            </div>
+        </div>
+    </footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

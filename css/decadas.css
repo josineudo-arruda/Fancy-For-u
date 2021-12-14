@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+h2 {
+    color: #3b4664 !important;
+    font-weight: bold !important;
+}
+
+/* Formatando Filmes famosos */
+section#famous-movies {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+section#famous-movies img{
+    margin-bottom: 30px;
+}
+section#famous-movies h2 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+section#famous-movies button{
+    background-color: #3b4664 !important;
+    border-color: #3b4664;
+    color: white !important;
+}
+section#famous-movies div#caption h4{
+    color: #ffffff !important;
+}
+section#famous-movies button:hover{
+    color: #ffffff !important;
+    padding: -5px !important;
+}
+section#famous-movies figure{
+    position: relative !important;
+}
+section#famous-movies figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box; 
+    transition: opacity 1s;
+}
+section#famous-movies figcaption button{
+    position: absolute;
+    
+}
+section#famous-movies figcaption h4{
+    display: block;
+}
+section#famous-movies figure:hover figcaption {
+    opacity: 1;
+}
+
+section#famous-movies figure:hover img {
+    transition: 1s;
+    filter: brightness(50%);
+}

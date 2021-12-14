@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>10 Coisas que Eu Odeio em Você</title>
+ 
+    <style>
+      body {
+    background-color: white;
+    font-family:'Times New Roman', Times, serif !important;
+}
+   p {
+    text-indent: 50px;
+    text-align: justify;
+    }
+
+    div#interface img.search {
+    width: 22px;
+}
+.bg-blue {
+    background-color: #3b4664 !important;
+}
+div#interface .navbar-brand {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+div#interface .nav-item {
+    font-size: 20px !important;
+}
+
+#footnote p.text {
+    padding-top: 20px !important;
+} 
+#footnote div{
+    color: #3b4664; 
+}
+#footnote .bg-rose {
+    background-color: rgb(234,159,163,.7) !important;
+}
+#footnote h4 {
+    font-size: 30px !important;
+    padding: 15px 10px 10px 10px !important;
+    text-decoration: none;
+}
+#footnote a {
+    color: #3b4664;
+}
+#footnote a:hover {
+    text-decoration-color: #3b4664;
+}
+#footnote .border-bottom {
+    border-color: #ffdbdb !important;
+}
+
+
+      .info-coisas {
+          width: 70%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+     }
+
+     #coisas-photo {
+       margin-top: 150px;
+        margin-bottom: 10px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ffdbdb;
+     }
+
+     #sinopse-coisas {
+       margin-bottom: 7px;
+        color: #3b4664;
+     }
+
+     #coisas-sinopse {
+       width: 95%;
+       margin-top: 5px;
+     }
+
+     .border-moda-coisas {
+      border-left: 20px;
+      margin-top: 10px;
+       color: #3b4664;
+      }
+
+      #border-curiosidades {
+         color: #3b4664;
+     }
+
+     .coisas-curiosidades {
+        width: 95%;
+        margin-bottom: 10px;
+        margin-left: 10px;
+     }
+
+     #link-coisas {
+          margin-left: 20px;
+          margin-bottom: 20px;
+          color: #3b4664;
+     }
+
+     .info-coisas-color {
+      color: #3b4664;
+     }
+
+    a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: #ffdbdb;
+}  
+
+
+ #nome-filme {
+      margin-top: 150px;
+      color: #3b4664;
+ }
+
+ #avaliacao {
+       border-bottom: 1px solid #ffdbdb;
+       color: #3b4664;
+       margin-top: 10px;
+       margin-left: 5px;
+ }
+
+ #pic1-diario {
+      margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+ }
+
+ #pic2-diario {
+     margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+ }
+
+ #pic3-diario {
+        margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+ }
+
+ #pic4-diario { margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+ }
+
+ div#fashion.border-top {
+   border-color: #ffdbdb !important;
+ }
+
+ .avaliacao {
+       border-bottom: 1px solid #ffdbdb;
+       color: #3b4664;
+       margin-top: 10px;
+       margin-left: 5px;
+ }
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+ a#link-coisas {
+   padding: 10px;
+ }
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 > label {
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+}
+
+.feedback1 {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.avaliacao-critica {
+  height: 10px;
+}
+     </style>
+
+     <script>
+       var peopleAvaliation = 5; 
+       var media = 4.5 ;
+      function Rating(value) {
+        var originalMedia = media * peopleAvaliation;
+        peopleAvaliation++;
+        var finalMedia = (originalMedia + value) / peopleAvaliation;
+        var final = parseFloat(finalMedia.toFixed(1));
+
+        document.getElementById("valorConvertido").innerHTML = (final+" ("+peopleAvaliation+")");
+        media = final;
+      }
+    </script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script language="javascript" src="../javascript/pesquisa-logica.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    
+</head>
+
+<body>
+
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div id="interface">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+          <a class="navbar-brand" href="../index.html">Fancy For U</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filmes</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="../anos-70.html">70's</a>
+                          <a class="dropdown-item" href="../anos-80.html">80's</a>
+                          <a class="dropdown-item" href="../anos-90.html">90's</a>
+                          <a class="dropdown-item" href="../anos-2000.html">2000's</a>
+                      </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="../pesquisa.html" method="get">
+                  <input class="form-control mr-sm-2 ml-2 my-3" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit" class="button-search">
+                      <img src="../images/pesquisa-icone.png" class="search-image" alt="">
+                  </button>
+              </form>
+              <a href="../quiz.html"><button class="btn btn-outline-light font-weight-bold my-2 ml-2 " type="button" > Quiz</button></a>
+          </div>
+      </nav>
+  </div>
+
+<div class="container">
+ <div class="row">
+
+  <div class="col-sm-12 col-md-12 col-lg-4">
+
+ <img id="coisas-photo" src="https://fanart.tv/fanart/movies/4951/movieposter/10-things-i-hate-about-you-532d61d2298e3.jpg" style="width:100%" class="img-fluid img-rounded">
+ </div>
+ 
+ <div class="col-sm-12 col-md-12 col-lg-8">
+
+ <h1 id="nome-filme"><strong>10 Coisas que Eu Odeio em Você</strong></h1>
+ <div class="info-coisas"><strong class="info-coisas-color">Lançamento:</strong> 6 de agosto de 1999 <br>
+ <strong class="info-coisas-color">Direção:</strong> Gil Junger<br>
+ <strong class="info-coisas-color">Roteiro:</strong> Kirsten Smith, Karen McCullah Lutz<br>
+ <strong class="info-coisas-color">Elenco:</strong> Heath Ledger, Julia Stiles, Joseph Gordon-Levitt<br>
+ <strong class="info-coisas-color">Gênero:</strong> Comédia romântica<br></div>
+
+ <h4 id="sinopse-coisas"><strong>Sinopse</strong></h4>
+
+ <p class="sinopse" class="text-justify"  id="coisas-sinopse">A situação está tensa na casa dos Stratford. Bianca (Larisa Oleynik) não vê a hora de arranjar um namorado, mas seu pai (Larry Miller) não permite que ela saia com garotos. Após muita insistência, o pai toma uma resolução: Bianca pode namorar, desde que sua irmã, Katharina (Julia Stiles), namore também. Só que Katharina é uma verdadeira megera, que não tem amigos na escola nem em lugar algum. Para resolver a questão, Cameron (Joseph Gordon-Levitt), apaixonado por Bianca, resolve contratar o misterioso Patrick Verona (Heath Ledger) para seduzir a futura cunhada.</p> 
+ </div>
+ </div>
+
+   <div class="container">
+<div id="fashion" class="row border-top">
+  <div class="border-moda-coisas col-sm-12 col-md-12 col-lg-8"><h1><strong>Moda</strong></h1>
+    </div></div></div>
+
+    <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6"><img  id="pic1-diario"src="https://cdn.discordapp.com/attachments/700107574493577260/911029473112096808/coisaspic1nova.jpg" style="width:100%" class="img-fluid img-rounded"> </div>
+    <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic2-diario" src="https://cdn.discordapp.com/attachments/700107574493577260/911029638350929940/coisaspic2nova.png" style="width:100%" class="img-fluid img-rounded"> </div>
+    <div class="w-100"></div>
+    <div class="col-sm-12 col-md-6 col-lg-6"><img  id="pic4-diario"src="https://cdn.discordapp.com/attachments/700107574493577260/911029761936072744/coisaspic3NOVA.png" style="width:100%" class="img-fluid img-rounded"></div>
+    <div class="col-sm-12 col-md-6 col-lg-6"><img  id="pic4-diario"src="https://cdn.discordapp.com/attachments/700107574493577260/911029861672423424/coisaspic4NOVA.png" style="width:100%" class="img-fluid img-rounded"></div>
+  </div>
+
+  <div class="container">
+   <div id="fashion" class="row border-top">
+  <h1 id="border-curiosidades"><strong>Curiosidades</strong></h1>
+   </div>
+   </div>
+
+ <ul>
+  <li><p class="coisas-curiosidades">O filme foi inspirado em uma obra de William Shakespeare. A obra “The Taming of the Shrew”, ou, em português, “A Megera Domada”. E, por se basear na peça, o filme possui diversas referências à obra original. O sobrenome das irmãs, Stratford, referencia o lugar de nascimento de Shakespeare. O nome da escola é Padua, o mesmo nome da cidade onde a peça se passa. E o sobrenome de Patrick, Verona, é a cidade em que um dos personagens da peça nasceu.</p></li>
+
+  <li><p class="coisas-curiosidades">A cena em que Cat recita o poema para toda a sala foi filmada apenas uma vez. E o choro da atriz Julia Stiles não era esperado, o que acabou comovendo todos que estavam no set de filmagem.</p> </li>
+
+  <li><p class="coisas-curiosidades">O título do filme é inspirado em uma lista encontrada no diário de uma das roteiristas. Era uma lista sobre as 10 coisas que ela odiava no namorado dela.</p> </li>
+
+  <li><p class="coisas-curiosidades">O personagem de Joseph Gordon-Levitt aprende a falar francês para dar aulas para Bianca. Mas, na vida real, Joseph é fluente na língua.</p></li>
+
+  <li><p class="coisas-curiosidades">Larisa Oleynik, a Bianca do filme, também estudou em Sarah Lawrence, escola em que sua personagem é aceita ao final do filme.</p> </li>
+
+  <li><p class="coisas-curiosidades">A icônica cena de Patrick cantando Can’t Take My Eyes Off You teve realmente a banda cantando no telhado da escola.</p> </li>
+
+  <li><p class="coisas-curiosidades">E o filme está recheado de momentos de improviso dos atores. Isso porque a cena em que Patrick brinca com fogo também foi improvisada por Ledger.</p> </li>
+
+  <li><p class="coisas-curiosidades">Heath Ledger lutou para conseguiu o papel de Patrick Verona. E olha que seus concorrentes eram de peso. Dentre eles estavam Josh Hartnett e Ashton Kutcher.</p> </li> </ul>
+
+  <a id="link-coisas" class="button" target="_blank" href="https://minhaseriefavorita.com/2019/08/08/10-coisas-que-eu-odeio-em-voce-curiosidades/#:~:text=As%20Melhores%20Curiosidades%20de%2010%20Coisas%20Que%20Eu,encontrada%20no%20di%C3%A1rio%20de%20uma%20das%20roteiristas.%20">Saber mais+</a>
+  </div>
+</div>
+</div>
+
+
+<div class="media"></div>
+<div class="container">
+      <h1 class="avaliacao" id="valor"><strong>Avaliações de usuários</strong></h1>
+          <div class="feedback">
+              <div class="rating">
+                <h3 id="valorConvertido"></h3>
+              <input type="radio" name="rating" id="rating-5">
+              <label for="rating-5" type="submit" onclick="Rating(5)" class="rate-1" size="2"></label>
+              <input type="radio" name="rating" id="rating-4" size="2">
+              <label for="rating-4" type="submit" onclick="Rating(4)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-3" size="2">
+              <label for="rating-3" type="submit" onclick="Rating(3)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-2" size="2">
+              <label for="rating-2" type="submit" onclick="Rating(2)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-1" size="2">
+              <label for="rating-1" type="submit" onclick="Rating(1)" class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+       <div class="container">
+      <h1 class="avaliacao"><strong>Avaliação crítica</strong></h1>
+          <div class="feedback1">
+              <div class="rating1">
+              <h2 class="avaliacao-critica">4.5</h2>
+              <div type="radio" name="rating1"></div>
+              <label for="rating-15" type="submit"size="2"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-14" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-13" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-12" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-11" type="submit"  class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+  <footer id="footnote" class="text-center text-lg-start bg-rose">
+        <div class="bg-rose">
+            <div class="ol-lg-6 col-md-12 mb-4 mb-md-0 border-bottom">
+                <h4 class="me-5"><a href="index.html">Fancy For U</a></h4>
+            </div>
+            <div class="container p-4 ">
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Quem somos?</h5>
+                        <p class="text">
+                            Uma equipe de 3 estudantes com objetivos de montar um site com os principios fundamentais de programação, almejamos todo conhecimento que iremos adquirir nesta jornada.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Projeto 2° ano</h5>
+                        <ul>
+                            <li>Josineudo Arruda</li>
+                            <li>Jéssica Raya</li>
+                            <li>Sabrina Ramos</li>
+                        </ul>
+                        <h5>IFSP - Campus São Paulo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgb(59,70,100,.8); color:#ffffff">Copyright &copy; 2021 - by Josineudo Arruda, Jéssica Raya e Sabrina Ramos
+            </div>
+        </div>
+    </footer>
+
+  </ul>
+</body>
+</html>

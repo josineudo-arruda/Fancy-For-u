@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Carrie, A Estranha</title>
+ 
+    <style>
+    body {
+    background-color: white;
+    font-family:'Times New Roman', Times, serif !important;
+}
+   p {
+    text-indent: 50px;
+    text-align: justify;
+    }
+
+    div#interface img.search {
+    width: 22px;
+}
+.bg-blue {
+    background-color: #3b4664 !important;
+}
+div#interface .navbar-brand {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+div#interface .nav-item {
+    font-size: 20px !important;
+}
+
+#footnote p.text {
+    padding-top: 20px !important;
+} 
+#footnote div{
+    color: #3b4664; 
+}
+#footnote .bg-rose {
+    background-color: rgb(234,159,163,.7) !important;
+}
+#footnote h4 {
+    font-size: 30px !important;
+    padding: 15px 10px 10px 10px !important;
+    text-decoration: none;
+}
+#footnote a {
+    color: #3b4664;
+}
+#footnote a:hover {
+    text-decoration-color: #3b4664;
+}
+#footnote .border-bottom {
+    border-color: #ffdbdb !important;
+}
+     #info-carrie {
+          margin-top: 10px;
+     }
+
+     #carrie-photo {
+          margin-top: 150px;
+          margin-bottom: 15px;
+           margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+     }
+
+     #sinopse-carrie {
+       margin-bottom: 2px;
+       margin-top: 30px;
+       color: #3b4664;
+     }
+
+     #carrie-sinopse {
+       max-width: 98%;
+       margin-bottom: 25px;
+     }
+
+     .border-moda-carrie {
+      color: #3b4664;
+     }
+
+     #pic1-carrie {
+      margin-bottom: 10px;
+       margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+     }
+
+     #pic2-carrie {
+      margin-bottom: 10px;
+       margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+     }
+
+     #pic3-carrie {
+      margin-bottom: 20px;
+       margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+     }
+
+      #pic4-carrie {
+       margin-bottom: 20px;
+        margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+      }
+
+      #border-curiosidades {
+        color: #3b4664;
+     }
+
+     .carrie-curiosidades {
+        max-width: 100%;
+     }
+
+     #link-carrie {
+          margin-left: 20px;
+          margin-bottom: 20px;
+           color: #3b4664;
+     }
+
+     .info-carrie-color {
+        color: #3b4664;
+        margin-top: 100px;
+     }
+
+      a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: rgb(255, 204, 204);
+}
+
+  #nome-filme {
+      margin-top: 150px;
+      color: #3b4664;
+ }
+
+   div.fashion.border-top {
+   border-color: #ffdbdb !important;
+    margin-top: 10px;
+         color: #3b4664;
+ }
+
+  div#fashion.border-top {
+   border-color: #ffdbdb !important;
+ }
+
+  .avaliacao {
+       border-bottom: 1px solid #ffdbdb;
+       color: #3b4664;
+       margin-top: 10px;
+       margin-left: 5px;
+ }
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 > label {
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+}
+
+.feedback1 {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+a#link-carrie {
+   padding: 10px;
+ }
+
+ </style>
+
+    <script>
+      var peopleAvaliation = 5; 
+      var media = 4.5 ;
+    function Rating(value) {
+      var originalMedia = media * peopleAvaliation;
+      peopleAvaliation++;
+      var finalMedia = (originalMedia + value) / peopleAvaliation;
+      var final = parseFloat(finalMedia.toFixed(1));
+
+      document.getElementById("valorConvertido").innerHTML = (final+" ("+peopleAvaliation+")");
+      media = final;
+    }
+    </script>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script language="javascript" src="../javascript/pesquisa-logica.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body>
+
+ <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div id="interface">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+          <a class="navbar-brand" href="../index.html">Fancy For U</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filmes</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="../anos-70.html">70's</a>
+                          <a class="dropdown-item" href="../anos-80.html">80's</a>
+                          <a class="dropdown-item" href="../anos-90.html">90's</a>
+                          <a class="dropdown-item" href="../anos-2000.html">2000's</a>
+                      </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="../pesquisa.html" method="get">
+                  <input class="form-control mr-sm-2 ml-2 my-3" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit" class="button-search">
+                      <img src="../images/pesquisa-icone.png" class="search-image" alt="">
+                  </button>
+              </form>
+              <a href="../quiz.html"><button class="btn btn-outline-light font-weight-bold my-2 ml-2 " type="button" > Quiz</button></a>
+          </div>
+      </nav>
+  </div>
+
+  <div class="container">
+ <div class="row">
+
+ 
+  <div class="col-sm-12 col-md-12 col-lg-4">
+<img id="carrie-photo" src="http://3.bp.blogspot.com/-GKqonqdMayc/VNzycVwSjrI/AAAAAAAAX00/DMFYdjWJzoY/s1600/carrie.png" style="width:100%" class="img-fluid img-rounded">
+</div>
+
+ <div class="col-sm-12 col-md-12 col-lg-8">
+<h1  id="nome-filme"><strong>Carrie, A Estranha</strong></h1>
+ <div id="info-carrie"><strong class="info-carrie-color">Lançamento:</strong> 1976 <br>
+ <strong class="info-carrie-color">Direção:</strong> Brian De Palma<br>
+ <strong class="info-carrie-color">Roteiro:</strong> Lawrence D. Cohen baseado no romance homônimo de Stephen King.<br>
+ <strong class="info-carrie-color">Elenco:</strong> Sissy Spacek, Piper Laurie<br>
+ <strong class="info-carrie-color">Gênero:</strong> Terror<br></div>
+
+ <h4 id="sinopse-carrie"><strong>Sinopse</strong></h4>
+
+ <p id="carrie-sinopse" class="text-justify">Do best seller de Stephen King, o suspense terrivelmente lírico do Diretor Brian DePlama (The New Yorker)
+ que captura sua mente, abala-a recusa-se a libertá-la (Time Magazine)! Estrelando Sissy Spacek e Piper Laurie 
+ (em atuações indicadas para o Oscar®), John Travolta e Amy Irving, esta obra da fantasia é absolutamente enfeitiçante (Roger Ebert),
+ definitivamente inteligente ( Los Angeles Times) e um dos grandese clássicos do terror de todos os tempos! 
+ O centro deste suspense é Carrie (Spacek), uma colegial repudiada por seus colegas, sem amigos... 
+ E sem nenhuma noção de seus poderes telecinéticos secretos. Mas quando sua mãe psicótica e seus sádicos colegas de classe chegam longe demais, 
+ aquela que foi um dia uma adolescente tímida torna-se uma máquina descontrolada de vingança que,
+ com o auxílio de seu dom especial transforma seu mundo em um famoso rio de sangue, fogo e demolição que irá transportá-los às profundezas do terror - e mais além!</p> 
+ </div>
+ </div>
+  <div class="container">
+  <div id="fashion" class="row border-top">
+  <div class="border-moda-carrie col-sm-12 col-md-12 col-lg-8"><h1><strong>Moda</strong></h1></div>
+  </div></div>
+
+
+  <div class="row">
+  <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic1-carrie"src="https://cdn.discordapp.com/attachments/700107574493577260/911308402867732490/carrie1nova.jpg" style="width:100%" class="img-fluid img-rounded">   
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic2-carrie"src="https://cdn.discordapp.com/attachments/700107574493577260/911308584732725319/carrie2nova.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div> 
+    <div class="w-100"></div>
+  <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic3-carrie"src="https://cdn.discordapp.com/attachments/700107574493577260/911308855584120912/carrie4nova.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+  <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic4-carrie"src="https://cdn.discordapp.com/attachments/700107574493577260/911311817773576272/carrien.jpeg" style="width:100%" class="img-fluid img-rounded"> 
+      </div> 
+   </div>
+
+   <div class="container">
+ <div class="row border-top fashion">
+ <h1 id="border-curiosidades" class="col-sm-12 col-md-12 col-lg-8"><strong>Curiosidades</strong></h1></div>
+
+ <ul>
+  <li><p class="carrie-curiosidades"> Não é de hoje que todos sabem que Brian de Palma é apaixonado por Hitchcock e as referências em seus filmes são inúmeras. Em Carrie, o nome do colégio é Bates High, uma referência a Norman Bates de Psicose (1960). Já o matadouro onde os importunadores de Carrie vão matar o porco cujo sangue será jogado no baile tem o nome de Bates Packing.
+</p></li>
+  <li><p class="carrie-curiosidades">George Lucas e Brian De Palma fizeram uma audição conjunta para Carrie e Guerra nas Estrelas (1977). Até Amy Irving fez teste para ser a Princesa Leia, mas não foi aprovada (De Palma, George Lucas e Spielberg faziam parte da mesma "gangue"). Mas ela fez parte do elenco de belas mulheres do filme Carrie. Steven Spielberg, o "safadienho", cantou várias delas e deu ruim. Mas deu bom com Ela namorou o diretor de 1976 a 1980.  Ela então teve um breve relacionamento com Willie Nelson, e o rompimento com Spielberg lhe custou o papel de Marion Ravenwood em Os Caçadores da Arca Perdida , que ele havia oferecido a ela na época. Eles reataram e se casaram de 1985. Se divorciaram 1989. E no processo tiveram um filho.</p> </li>
+
+  <li><p class="carrie-curiosidades">Este foi o primeiro romance de Stephen King adaptado para o cinema. O final do filme é diferente do romance e, de fato, Stephen King gostou mais do final do filme do que do final de seu próprio livro. Ele recebeu apenas 2.500 dólares pelos direitos,  o que foi uma ninharia, King não se arrependeu. Achou um golpe de sorte na verdade, já que Carrie abriu um caminho que perdura até hoje.</p> </li>
+
+  <li><p class="carrie-curiosidades">Sissy Spacek perguntou a Brian De Palma como ele queria que ela reagisse quando Carrie percebeu que estava sangrando no chuveiro (devido ao ciclo menstrual) e De Palma disse a ela "É como se você tivesse sido atropelada por um caminhão". Spacek conversou com seu marido Jack Fisk, que quando criança foi atropelado por um carro quando ele estava parado nas ruas olhando as luzes de Natal que um vizinho havia acendido e usou sua descrição da experiência como base. para a cena.
+</p></li>
+
+  <li><p class="carrie-curiosidades"> Bernard Herrmann, indicado ao Oscar pela trilha do filme anterior de Brian, Trágica Obsessão, estava escalado para compor Carrie, mas faleceu no mês de dezembro antes da conclusão do filme. O tema violino de quatro notas de Psicose (de Hermann), é usado repetidamente, como uma homenagem a ele e a Hitchcock, que De Palma era fã.</p> </li>
+
+  <li><p class="carrie-curiosidades">Esta é para os fãs de Stephen King. Na linha temporal, Carrie foi escrita por King em 1974. De Palma e George eram muito amigos e fizeram audições juntos para seus respectivos filmes como dito acima. Ainda que figurem em universos completamente diferentes, ambos os personagens principais (Carrie e Luke) são adolescentes telecinéticos com formação semi-trágica; ambos tentando superar enormes obstáculos e usar seus poderes para entender o mundo. Ambos têm pais maus que estão tentando matá-los (ou possuí-los); assim como muitos inimigos hostis.</p> </li>
+
+  <a id="link-carrie" class="button"target="_blank" href="https://www.tudosobreseufilme.com.br/2020/12/13-curiosidades-sobre-o-filme-carrie.html">Saber mais+</a>
+
+  </ul>
+  </div>
+</div>
+
+<div class="media"></div>
+<div class="container">
+      <h1 class="avaliacao" id="valor"><strong>Avaliações de usuários</strong></h1>
+          <div class="feedback">
+              <div class="rating">
+                <h3 id="valorConvertido"></h3>
+              <input type="radio" name="rating" id="rating-5">
+              <label for="rating-5" type="submit" onclick="Rating(5)" class="rate-1" size="2"></label>
+              <input type="radio" name="rating" id="rating-4" size="2">
+              <label for="rating-4" type="submit" onclick="Rating(4)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-3" size="2">
+              <label for="rating-3" type="submit" onclick="Rating(3)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-2" size="2">
+              <label for="rating-2" type="submit" onclick="Rating(2)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-1" size="2">
+              <label for="rating-1" type="submit" onclick="Rating(1)" class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+       <div class="container">
+      <h1 class="avaliacao"><strong>Avaliação crítica</strong></h1>
+          <div class="feedback1">
+              <div class="rating1">
+              <h2 class="avaliacao-critica">4.0</h2>
+              <div type="radio" name="rating1"></div>
+              <label for="rating-15" type="submit"size="2"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-14" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-13" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-12" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-11" type="submit"  class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+
+      <footer id="footnote" class="text-center text-lg-start bg-rose">
+        <div class="bg-rose">
+            <div class="ol-lg-6 col-md-12 mb-4 mb-md-0 border-bottom">
+                <h4 class="me-5"><a href="index.html">Fancy For U</a></h4>
+            </div>
+            <div class="container p-4 ">
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Quem somos?</h5>
+                        <p class="text">
+                            Uma equipe de 3 estudantes com objetivos de montar um site com os principios fundamentais de programação, almejamos todo conhecimento que iremos adquirir nesta jornada.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Projeto 2° ano</h5>
+                        <ul>
+                            <li>Josineudo Arruda</li>
+                            <li>Jéssica Raya</li>
+                            <li>Sabrina Ramos</li>
+                        </ul>
+                        <h5>IFSP - Campus São Paulo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgb(59,70,100,.8); color:#ffffff">Copyright &copy; 2021 - by Josineudo Arruda, Jéssica Raya e Sabrina Ramos
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

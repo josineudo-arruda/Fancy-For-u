@@ -1,0 +1,451 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Diário de uma Paixão</title>
+ 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <style>
+       body {
+    background-color: white;
+    font-family:'Times New Roman', Times, serif !important;
+}
+   p {
+    text-indent: 50px;
+    text-align: justify;
+    }
+
+    div#interface img.search {
+    width: 22px;
+   }
+.bg-blue {
+    background-color: #3b4664 !important;
+}
+div#interface .navbar-brand {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+div#interface .nav-item {
+    font-size: 20px !important;
+}
+
+#footnote p.text {
+    padding-top: 20px !important;
+} 
+#footnote div{
+    color: #3b4664; 
+}
+#footnote .bg-rose {
+    background-color: rgb(234,159,163,.7) !important;
+}
+#footnote h4 {
+    font-size: 30px !important;
+    padding: 15px 10px 10px 10px !important;
+    text-decoration: none;
+}
+#footnote a {
+    color: #3b4664;
+}
+#footnote a:hover {
+    text-decoration-color: #3b4664;
+}
+#footnote .border-bottom {
+    border-color: #ffdbdb !important;
+}
+
+      .info-diario {
+          width: 70%;
+          margin-top: 10px;
+     }
+
+     .diario-photo {
+          margin-top: 20px;
+          margin-left: 7px;
+          margin-top: 150px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #ffdbdb;
+     }
+
+     #sinopse-diario {
+       margin-bottom: 2px;
+       color: #3b4664;
+       margin-top: 15px;
+     }
+
+     .sinopse {
+       max-width: 100%;
+       margin-bottom: 10px;
+     }
+
+     .border-moda-diario {
+      border-left: 20px;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      color: #3b4664;
+     }
+
+      #border-curiosidades {
+        border-top: 1px solid #ffdbdb; 
+        color: #3b4664;
+        margin-top: 30px;
+     }
+
+     .diario-curiosidades {
+        max-width: 95%;
+     }
+
+     .info-diario-color {
+      color: #3b4664;
+     }
+
+     #link-diario {
+          margin-left: 20px;
+          margin-bottom: 20px;
+           color: #3b4664;
+     }
+
+     a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: rgb(255, 204, 204);
+}
+
+ #nome-filme {
+      margin-top: 150px;
+      color: #3b4664;
+ }
+
+ .img-fluid {
+       max-width: 100%; 
+       height: auto; 
+       width: 100% \9;
+ }
+
+ #pic1-diario{
+   margin-bottom: 10px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+ }
+
+ #pic2-diario{
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffdbdb;
+ }
+
+ #pic4-diario {
+      margin-bottom: 10px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ffdbdb;
+ }
+
+ #pic3-diario {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ffdbdb;
+ }
+
+ div#fashion.border-top {
+   border-color: #ffdbdb !important;
+ }
+
+  .avaliacao {
+       border-bottom: 1px solid #ffdbdb;
+       color: #3b4664;
+       margin-top: 10px;
+       margin-left: 5px;
+ }
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 > label {
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+}
+
+.feedback1 {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+a#link-diario {
+   padding: 10px;
+ }
+
+ </style>
+
+    <script>
+      var peopleAvaliation = 5; 
+      var media = 4.5 ;
+    function Rating(value) {
+      var originalMedia = media * peopleAvaliation;
+      peopleAvaliation++;
+      var finalMedia = (originalMedia + value) / peopleAvaliation;
+      var final = parseFloat(finalMedia.toFixed(1));
+
+      document.getElementById("valorConvertido").innerHTML = (final+" ("+peopleAvaliation+")");
+      media = final;
+    }
+    </script>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script language="javascript" src="../javascript/pesquisa-logica.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body>
+
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+    <div id="interface">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+          <a class="navbar-brand" href="../index.html">Fancy For U</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filmes</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="../anos-70.html">70's</a>
+                          <a class="dropdown-item" href="../anos-80.html">80's</a>
+                          <a class="dropdown-item" href="../anos-90.html">90's</a>
+                          <a class="dropdown-item" href="../anos-2000.html">2000's</a>
+                      </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="../pesquisa.html" method="get">
+                  <input class="form-control mr-sm-2 ml-2 my-3" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit" class="button-search">
+                      <img src="../images/pesquisa-icone.png" class="search-image" alt="">
+                  </button>
+              </form>
+              <a href="../quiz.html"><button class="btn btn-outline-light font-weight-bold my-2 ml-2 " type="button" > Quiz</button></a>
+          </div>
+      </nav>
+  </div>
+
+<div class="container">
+ <div class="row">
+
+  <div class="col-sm-12 col-md-12 col-lg-4">
+  <img class="diario-photo" src="https://cdn.discordapp.com/attachments/700107574493577260/910984689857208330/diariopic5novo.png" style="width:100%" class="img-fluid img-rounded">
+  </div> 
+
+  <div class="col-sm-12 col-md-12 col-lg-8">
+   <h1 id="nome-filme" ><strong>Diário de uma Paixão</strong></h1>
+   <div class="info-diario"><strong class="info-diario-color">Lançamento</strong> 13 de agosto de 2004  <br>
+
+   <strong class="info-diario-color">Direção:</strong> 	Nick Cassavetes<br>
+   <strong class="info-diario-color">Roteiro:</strong>  Jan Sardi e Jeremy Leven.<br>
+   <strong class="info-diario-color">Elenco:</strong>  Ryan Gosling, Rachel McAdams, James Garner<br>
+   <strong class="info-diario-color">Gênero:</strong> Comédia romântica<br></div>
+   
+   <h3 id="sinopse-diario"><strong>Sinopse</strong></h3>
+
+   <p  class="sinopse" class="text-justify" >Numa clínica geriátrica, Duke, um dos internos que relativamente está bem, lê para uma interna (com um quadro mais grave) a história de Allie Hamilton (Rachel McAdams) e Noah Calhoun (Ryan Gosling), dois jovens enamorados que em 1940 se conheceram num parque de diversões. Eles foram separados pelos pais dela, que nunca aprovaram o namoro, pois Noah era um trabalhador braçal e oriundo de uma família sem recursos financeiros. Para evitar qualquer aproximação, os pais de Alie a mandam para longe. Por um ano Noah escreveu para Allie todos os dias mas não obteve resposta, pois a mãe (Joan Allen) dela interceptava as cartas de Noah para a filha. Crendo que Allie não estava mais interessada nele, Noah escreveu uma carta de despedida e tentou se conformar. Alie esperava notícias de Noah, mas após 7 anos desistiu de esperar ao conhecer um charmoso oficial, Lon Hammond Jr. (James Marsden), que serviu na 2ª Grande Guerra (assim como Noah) e pertencia a uma família muito rica. Ele pede a mão de Allie, que aceita, mas o destino a faria se reencontrar com Noah. Como seu amor por ele ainda existia e era recíproco, ela precisa escolher entre o noivo e seu primeiro amor.</p>
+  </div>
+ </div>
+ <div class="container">
+    <div id="fashion" class="row border-top">
+      <div class="border-moda-diario col-sm-12 col-md-12 col-lg-8"><h1><strong>Moda</strong></h1></div></div>
+
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6"><img  id="pic1-diario"src="https://media.discordapp.net/attachments/700107574493577260/910980726604853298/diariopic1nova.jpg?width=623&height=467" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+      <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic2-diario" src="https://cdn.discordapp.com/attachments/700107574493577260/910981162095239178/diariopic2nova.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>
+      <div class="w-100"></div>
+      <div class="col-sm-12 col-md-6 col-lg-6"><img  id="pic4-diario"src="https://cdn.discordapp.com/attachments/700107574493577260/910981652455497768/diariopic3nova.jpg" style="width:100%" class="img-fluid img-rounded">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic3-diario"src="https://cdn.discordapp.com/attachments/700107574493577260/910981794562727956/diariopic4nova.jpg" style="width:100%" class="img-fluid img-rounded">
+      </div>
+    </div>
+
+    <div class="container">
+    <h1 id="border-curiosidades"><strong>Curiosidades</strong></h1></div>
+
+ <ul>
+  <li><p class="diario-curiosidades">Ryan Gosling era um ator desconhecido quando foi escolhido para o papel principal. O diretor Nick Cassavetes disse que escolheu Gosling porque ele não era bonito nem legal, mas “apenas um cara normal, que parece um pouco louco”. Ele disse que a história de amor foi mais realista porque Gosling não era bonito.</p></li>
+
+  <li><p class="diario-curiosidades">Britney Spears fez o teste para interpretar Allie. Ryan Gosling comentou que ela fez um ótimo trabalho na audição. Reese Witherspoon e Jessica Biel também fizeram o teste para o papel.</p> </li>
+
+  <li><p class="diario-curiosidades">Rachel McAdams surpreendeu Gosling e Cassavetes durante a audição. Ambos sentiram que ela entendeu o papel melhor do que qualquer outra atriz. McAdams revelou que chorou incontrolavelmente ao ler o roteiro pela primeira vez.</p> </li>
+
+  <li><p class="diario-curiosidades">Ryan Gosling e Rachel McAdams não se deram muito bem durante as filmagens. Segundo Cassavetes, eles tiveram um bate-boca sério e, em determinado momento, Gosling pediu que McAdams fosse retirada do set e substituída por outra atriz.</p></li>
+
+  <li><p class="diario-curiosidades">Apesar disso, Gosling e McAdams ganharam o prêmio de Melhor Beijo no MTV Movie Awards de 2005 pelo filme. No final, Gosling e McAdams se apaixonaram e viveram um relacionamento de idas e vindas por três anos e meio, até 2009.</p> </li>
+
+  <li><p class="diario-curiosidades">A empresa produtora do filme quase não permitiu que a romântica cena dos pássaros acontecesse, pois argumentou que não havia treinadores de pássaros no ramo capazes de tornar a cena possível. No final, os cineastas compraram um bando de pássaros recém-nascidos e contrataram treinadores de animais para criá-los perto do lago, para que fossem perfeitamente treinados para o filme.</p> </li>
+
+  <li><p class="diario-curiosidades">O filme é baseado no livro “The Notebook” (no Brasil, “Diário de uma Paixão”), primeiro romance publicado de Nicholas Sparks.</p> </li>
+
+  <li><p class="diario-curiosidades">Sparks encontrou a inspiração para escrever o romance após conhecer os avós de sua esposa, casados há mais de 60 anos. Um dia após o casamento de Sparks e sua esposa, eles visitaram os avós dela. O autor disse: “Minha lembrança mais forte daquele dia é a maneira como eles tratavam um ao outro. A maneira como os olhos dele brilhavam ao olhar para ela, a maneira como ele segurava a mão dela, como levava chá para ela e cuidava dela.”</p> </li>
+
+  <a id="link-diario"target="_blank" class="button"href="https://www.portalraizes.com/20-curiosidades-que-voce-nao-sabe-do-filme-diario-de-uma-paixao/">Saber mais+</a>
+
+  </ul>
+
+   </div>
+
+<div class="media"></div>
+<div class="container">
+      <h1 class="avaliacao" id="valor"><strong>Avaliações de usuários</strong></h1>
+          <div class="feedback">
+              <div class="rating">
+                <h3 id="valorConvertido"></h3>
+              <input type="radio" name="rating" id="rating-5">
+              <label for="rating-5" type="submit" onclick="Rating(5)" class="rate-1" size="2"></label>
+              <input type="radio" name="rating" id="rating-4" size="2">
+              <label for="rating-4" type="submit" onclick="Rating(4)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-3" size="2">
+              <label for="rating-3" type="submit" onclick="Rating(3)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-2" size="2">
+              <label for="rating-2" type="submit" onclick="Rating(2)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-1" size="2">
+              <label for="rating-1" type="submit" onclick="Rating(1)" class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+       <div class="container">
+      <h1 class="avaliacao"><strong>Avaliação crítica</strong></h1>
+          <div class="feedback1">
+              <div class="rating1">
+              <h2 class="avaliacao-critica">4.6</h2>
+              <div type="radio" name="rating1"></div>
+              <label for="rating-15" type="submit"size="2"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-14" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-13" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-12" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-11" type="submit"  class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+   <footer id="footnote" class="text-center text-lg-start bg-rose">
+        <div class="bg-rose">
+            <div class="ol-lg-6 col-md-12 mb-4 mb-md-0 border-bottom">
+                <h4 class="me-5"><a href="index.html">Fancy For U</a></h4>
+            </div>
+            <div class="container p-4 ">
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Quem somos?</h5>
+                        <p class="text">
+                            Uma equipe de 3 estudantes com objetivos de montar um site com os principios fundamentais de programação, almejamos todo conhecimento que iremos adquirir nesta jornada.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Projeto 2° ano</h5>
+                        <ul>
+                            <li>Josineudo Arruda</li>
+                            <li>Jéssica Raya</li>
+                            <li>Sabrina Ramos</li>
+                        </ul>
+                        <h5>IFSP - Campus São Paulo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgb(59,70,100,.8); color:#ffffff">Copyright &copy; 2021 - by Josineudo Arruda, Jéssica Raya e Sabrina Ramos
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

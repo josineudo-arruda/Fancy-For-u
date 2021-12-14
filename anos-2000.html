@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy For U</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/decadas.css">
+    <script language="javascript" src="javascript/pesquisa-logica.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div id="interface">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+            <a class="navbar-brand" href="index.html">Fancy For U</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filmes</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="anos-70.html">70's</a>
+                            <a class="dropdown-item" href="anos-80.html">80's</a>
+                            <a class="dropdown-item" href="anos-90.html">90's</a>
+                            <a class="dropdown-item" href="#">2000's</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" action="pesquisa.html" method="get">
+                    <input class="form-control mr-sm-2 ml-2 my-3" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit" class="button-search">
+                        <img src="images/pesquisa-icone.png" class="search-image">
+                    </button>
+                </form>
+                <a href="quiz.html"><button class="btn btn-outline-light font-weight-bold my-2 ml-2 " type="button" > Quiz</button></a>
+            </div>
+        </nav>
+        <br><br><br>
+        <section id="famous-movies" class="container">
+            <h2>Filmes Famosos da Década de 2000</h2>
+            <div class="row">
+                <figure class="col-sm-6 col-md-3">
+                    <img class="img-responsive" src="images/decadas/famoso-diabo.jpg" style="width:100%">
+                    <figcaption>
+                        <h4>Diabo veste Prada</h4>
+                        <a href="/Filmes_prontos/">
+                            <button class="btn btn-outline-info color font-weight-bold">+</button>
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure class="col-sm-6 col-md-3 movie">
+                    <img class="img-responsive" src="images/decadas/famoso-kill.jpg" style="width:100%">
+                    <figcaption>
+                        <h4>Kill bill</h4>
+                        <a href="Filmes_prontos/KillBill.html">
+                            <button class="btn btn-outline-info color font-weight-bold">+</button>
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure class="col-sm-6 col-md-3">
+                    <img class="img-responsive" src="images/decadas/famoso-diario.jfif" style="width:100%">
+                    <figcaption>
+                        <h4>Diário de uma paixão</h4>
+                        <a href="Filmes_prontos/DiárioDeUmaPaixão.html">
+                            <button class="btn btn-outline-info color font-weight-bold">+</button>
+                        </a>
+                    </figcaption>
+                </figure>
+                <figure class="col-sm-6 col-md-3">
+                    <img class="img-responsive" src="images/decadas/famoso-mean.jpg" style="width:100%">
+                    <figcaption>
+                        <h4>Meninas malvadas</h4>
+                        <a href="/Filmes_prontos/">
+                            <button class="btn btn-outline-info color font-weight-bold">+</button>
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <footer id="footnote" class="text-center text-lg-start bg-rose">
+            <div class="bg-rose">
+                <div class="ol-lg-6 col-md-12 mb-4 mb-md-0 border-bottom">
+                    <h4 class="me-5">Fancy For U</h4>
+                </div>
+                <div class="container p-4 ">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase font-weight-bold">Quem somos?</h5>
+                            <p class="text">
+                                Uma equipe de 3 estudantes com objetivo de montar um site com os princípios fundamentais de programação. Almejamos todo conhecimento que iremos adquirir nesta jornada.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase font-weight-bold">Projeto 2° ano</h5>
+                            <ul>
+                                <li>Josineudo Arruda</li>
+                                <li>Jéssica Raya</li>
+                                <li>Sabrina Ramos</li>
+                            </ul>
+                            <h5>IFSP - Campus São Paulo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-3" style="background-color: rgb(59,70,100,.8); color:#ffffff">Copyright &copy; 2021 - by Josineudo Arruda, Jéssica Raya e Sabrina Ramos
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>

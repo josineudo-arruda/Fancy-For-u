@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Kill Bill</title>
+ 
+    <style>
+        body {
+    background-color: white;
+    font-family:'Times New Roman', Times, serif !important;
+}
+   p {
+    text-indent: 50px;
+    text-align: justify;
+    }
+
+    div#interface img.search {
+    width: 22px;
+}
+.bg-blue {
+    background-color: #3b4664 !important;
+}
+div#interface .navbar-brand {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+div#interface .nav-item {
+    font-size: 20px !important;
+}
+
+#footnote p.text {
+    padding-top: 20px !important;
+} 
+#footnote div{
+    color: #3b4664; 
+}
+#footnote .bg-rose {
+    background-color: rgb(234,159,163,.7) !important;
+}
+#footnote h4 {
+    font-size: 30px !important;
+    padding: 15px 10px 10px 10px !important;
+    text-decoration: none;
+}
+#footnote a {
+    color: #3b4664;
+}
+#footnote a:hover {
+    text-decoration-color: #3b4664;
+}
+#footnote .border-bottom {
+    border-color: #ffdbdb !important;
+}
+
+      .info-kill {
+           max-width: 100%;
+           margin-top: 10px;
+           margin-bottom: 10px;
+     }
+
+     #kill-photo {
+   border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+   margin-top: 150px;
+     }
+
+     #sinopse-kill {
+       margin-bottom: 10px;
+       margin-top: 10px;
+       color: #3b4664;
+     }
+
+     #kill-sinopse {
+       max-width: 100%;
+       margin-bottom: 36px;
+     }
+
+     .border-moda-kill {
+      border-left: 20px;
+       color: #3b4664;
+     }
+
+     #pic2-kill {
+      border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+   margin-bottom: 10px;
+     }
+
+     #pic1-kill {
+        margin-bottom: 10px;
+          border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+
+     #pic2-kill {
+
+        margin-bottom: 10px;
+          border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+
+     #pic3-kill {
+       margin-bottom: 20px;
+         border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+
+     #pic4-kill {
+       margin-bottom: 20px;
+         border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+
+      #border-curiosidades {
+         color: #3b4664;
+     }
+
+     .kill-curiosidades {
+        max-width: 100%;
+     }
+
+     .info-kill-color{
+      color: #3b4664;
+     }
+
+     #link-kill {
+          margin-left: 20px;
+          margin-bottom: 20px;
+           color: #3b4664;
+     }
+
+      a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: rgb(255, 204, 204);
+}
+
+ #nome-filme {
+      margin-top: 150px;
+      color: #3b4664;
+ }
+
+ 
+  div#fashion.border-top {
+   border-color: #ffdbdb !important;
+    margin-top: 10px;
+         color: #3b4664;
+ }
+
+  div.fashion.border-top {
+   border-color: #ffdbdb !important;
+    margin-top: 10px;
+         color: #3b4664;
+ }
+
+  .avaliacao {
+       border-bottom: 1px solid #ffdbdb;
+       color: #3b4664;
+       margin-top: 10px;
+       margin-left: 5px;
+ }
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.rating1 > label {
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+}
+
+.feedback1 {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+a#link-kill {
+   padding: 10px;
+ }
+ </style>
+    <script>
+      var peopleAvaliation = 5; 
+      var media = 4.5 ;
+    function Rating(value) {
+      var originalMedia = media * peopleAvaliation;
+      peopleAvaliation++;
+      var finalMedia = (originalMedia + value) / peopleAvaliation;
+      var final = parseFloat(finalMedia.toFixed(1));
+
+      document.getElementById("valorConvertido").innerHTML = (final+" ("+peopleAvaliation+")");
+      media = final;
+    }
+    </script>
+    <script language="javascript" src="../javascript/pesquisa-logica.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+ <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div id="interface">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+          <a class="navbar-brand" href="../index.html">Fancy For U</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filmes</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="../anos-70.html">70's</a>
+                          <a class="dropdown-item" href="../anos-80.html">80's</a>
+                          <a class="dropdown-item" href="../anos-90.html">90's</a>
+                          <a class="dropdown-item" href="../anos-2000.html">2000's</a>
+                      </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="../pesquisa.html" method="get">
+                  <input class="form-control mr-sm-2 ml-2 my-3" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit" class="button-search">
+                      <img src="../images/pesquisa-icone.png" class="search-image" alt="">
+                  </button>
+              </form>
+              <a href="../quiz.html"><button class="btn btn-outline-light font-weight-bold my-2 ml-2 " type="button" > Quiz</button></a>
+          </div>
+      </nav>
+  </div>
+   
+<div class="container">
+  <div class="row">
+
+  <div class="col-sm-12 col-md-12 col-lg-4">
+
+<img id="kill-photo" src="https://www.tutoriart.com.br/wp-content/uploads/2012/02/kill-bill-vol-1-poster-01.jpg" style="width:100%" class="img-fluid img-rounded">
+ </div> 
+
+ <div class="col-sm-12 col-md-12 col-lg-8">
+ <h1 id="nome-filme"><strong>Kill Bill</strong></h1>
+ <div class="info-kill"><strong class="info-kill-color">Lançamento:</strong>8 de outubro de 2004 <br>
+ <strong class="info-kill-color">Direção:</strong> 	 Quentin Tarantino<br>
+ <strong class="info-kill-color">Roteiro:</strong>   Quentin Tarantino, Uma Thurman<br>
+ <strong class="info-kill-color">Elenco:</strong>  Uma Thurman, David Carradine, Michael Madsen<br>
+ <strong class="info-kill-color">Gênero:</strong> Ação, aventura<br></div>
+
+ <h4 id="sinopse-kill"><strong>Sinopse</strong></h4>
+
+ <p class="text-justify" id="kill-sinopse">Após ser traída por Bill (David Carradine) e seu antigo grupo, a Noiva assassina (Uma Thurman) fica à beira da morte por 4 anos. Após despertar do coma, ela vai atrás de cada um dos seus antigos companheiros para matá-los. Na segunda parte dessa busca por vingança, a noiva vai continuar sua procura por Bill, atacando os últimos dois sobreviventes do grupo: Budd (Michael Madsen) e Elle Driver (Daryl Hannah). O confronto com seu antigo mestre, e mandante da sua morte, vai revelar novas surpresas para a assassina.</p> 
+ </div> </div>
+
+ <div class="container">
+  <div id="fashion" class="row border-top">
+  <div class="border-moda-kill"><h1><strong>Moda</strong></h1></div></div></div>
+
+  
+ <div class="row">
+
+   <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic2-kill"src="https://www.lipstickandpolitics.com/wp-content/uploads/2018/07/killbill-1.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+   <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic1-kill"src="https://wallpapers.moviemania.io/desktop/movie/24/58fcb4/kill-bill-vol-1-desktop-wallpaper.jpg?w=2552&h=1442" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+   <div class="w-100"></div>
+   <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic3-kill"src="https://wallpapercave.com/wp/wp1817606.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+   <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic4-kill"src="https://cdn.discordapp.com/attachments/700107574493577260/911334427966210108/kill4.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+
+   </div>
+
+   <div class="container">
+ <div class="row border-top fashion">
+ <h1 class="col-sm-12 col-md-12 col-lg-8" id="border-curiosidades"><strong>Curiosidades</strong></h1>
+ </div></div>
+ <ul>
+  <li><p class="kill-curiosidades">O filme levou 155 dias para ser feito, e ficou tão grande que Tarantino resolveu dividi-lo em duas partes, pois achou arriscado fazer apenas um filme de quatro horas de duração. Por isso Os títulos Kill Bill: Volume I e Kill Bill: Volume II.</p></li>
+
+  <li><p class="kill-curiosidades">O papel de Noiva, foi um presente de aniversário dado a Uma Thurman, por Quentin Tarantino, por seus 30 anos de idade.</p> </li>
+
+  <li><p class="kill-curiosidades">A cena da luta na Casa das Folhas Azuis ficou tão violenta, devido a alta quantidade de sangue, que o órgão de classificação etária dos EUA disse que Tarantino precisaria cortá-la do filme. Para não cortar uma cena tão boa, que havia dado tanto trabalho o diretor resolveu colocá-la em preto e branco, conseguindo assim sua aprovação.</p> </li>
+
+  <li><p class="kill-curiosidades"> A banda The 5,6,7,8’s, que toca no filme foi descoberta por Tarantino enquanto ele fazia compras no Japão. Ele comprou o CD da banda após ouvi-los numa loja e quanto voltou para casa os contratou para o filme.</p></li>
+
+  <li><p class="kill-curiosidades"> Na versão japonesa do filme, a cena da luta na Casa das Folhas Azuis foi mantida em cores.</p> </li>
+
+  <li><p class="kill-curiosidades"> Noiva teve um score de assassinatos maior que muitos serial killers por aí, só no primeiro filme a personagem matou um total de 95 pessoas.</p> </li>
+
+  <li><p class="kill-curiosidades">Cerca de 1700 litros de sangue falso foram gastos para dar aquele clima violento e sanguinário as cenas de Kill Bill.</p> </li>
+
+  <li><p class="kill-curiosidades"> O efeito de sangue voando para todos os lados foi feito de uma maneira tão simples que chega a ser engraçado, os contrarregras apenas estouravam camisinhas cheias de sangue falso.</p> </li>
+
+  <a id="link-kill" class="button" target="_blank" href="https://epipoca.com.br/10-curiosidades-sobre-kill-bill-que-ninguem-sabia/">Saber mais+</a>
+  </ul>
+  </div></div>
+
+<div class="media"></div>
+<div class="container">
+      <h1 class="avaliacao" id="valor"><strong>Avaliações de usuários</strong></h1>
+          <div class="feedback">
+              <div class="rating">
+                <h3 id="valorConvertido"></h3>
+              <input type="radio" name="rating" id="rating-5">
+              <label for="rating-5" type="submit" onclick="Rating(5)" class="rate-1" size="2"></label>
+              <input type="radio" name="rating" id="rating-4" size="2">
+              <label for="rating-4" type="submit" onclick="Rating(4)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-3" size="2">
+              <label for="rating-3" type="submit" onclick="Rating(3)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-2" size="2">
+              <label for="rating-2" type="submit" onclick="Rating(2)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-1" size="2">
+              <label for="rating-1" type="submit" onclick="Rating(1)" class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+       <div class="container">
+      <h1 class="avaliacao"><strong>Avaliação crítica</strong></h1>
+          <div class="feedback1">
+              <div class="rating1">
+              <h2 class="avaliacao-critica">3.9</h2>
+              <div type="radio" name="rating1"></div>
+              <label for="rating-15" type="submit"size="2"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-14" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-13" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-12" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-11" type="submit"  class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+  <footer id="footnote" class="text-center text-lg-start bg-rose">
+        <div class="bg-rose">
+            <div class="ol-lg-6 col-md-12 mb-4 mb-md-0 border-bottom">
+                <h4 class="me-5"><a href="index.html">Fancy For U</a></h4>
+            </div>
+            <div class="container p-4 ">
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Quem somos?</h5>
+                        <p class="text">
+                            Uma equipe de 3 estudantes com objetivos de montar um site com os principios fundamentais de programação, almejamos todo conhecimento que iremos adquirir nesta jornada.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Projeto 2° ano</h5>
+                        <ul>
+                            <li>Josineudo Arruda</li>
+                            <li>Jéssica Raya</li>
+                            <li>Sabrina Ramos</li>
+                        </ul>
+                        <h5>IFSP - Campus São Paulo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgb(59,70,100,.8); color:#ffffff">Copyright &copy; 2021 - by Josineudo Arruda, Jéssica Raya e Sabrina Ramos
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

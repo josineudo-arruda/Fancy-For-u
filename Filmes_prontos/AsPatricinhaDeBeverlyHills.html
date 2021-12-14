@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>As Patricinhas de Beverly Hills</title>
+
+    <style>
+
+      body {
+    background-color: white;
+    font-family:'Times New Roman', Times, serif !important;
+}
+   p {
+    text-indent: 50px;
+    text-align: justify;
+    }
+
+    div#interface img.search {
+    width: 22px;
+}
+.bg-blue {
+    background-color: #3b4664 !important;
+}
+div#interface .navbar-brand {
+    font-size: 30px !important;
+    color: #ffffff !important;
+}
+div#interface .nav-item {
+    font-size: 20px !important;
+}
+
+#footnote p.text {
+    padding-top: 20px !important;
+} 
+#footnote div{
+    color: #3b4664; 
+}
+#footnote .bg-rose {
+    background-color: rgb(234,159,163,.7) !important;
+}
+#footnote h4 {
+    font-size: 30px !important;
+    padding: 15px 10px 10px 10px !important;
+    text-decoration: none;
+}
+#footnote a {
+    color: #3b4664;
+}
+#footnote a:hover {
+    text-decoration-color: #3b4664;
+}
+#footnote .border-bottom {
+    border-color: #ffdbdb !important;
+}
+     #patricinhas-photo {
+      margin-top: 150px;
+      margin-bottom: 20px;
+       border-width: 1px;
+      border-style: solid;
+      border-color: #ffdbdb;
+     }
+
+     .info-patricinhas {
+          max-width: 100%;
+          margin-top: 10px;
+     }
+
+     #sinopse-patricinhas {
+         margin-bottom: 2px;
+         margin-top: 7px;
+         color: #3b4664;
+     }
+
+     #patricinhas-sinopse{
+      max-width: 100%;
+      margin-bottom: 50px;
+      margin-top: 10px;
+     }
+     .border {
+        
+     }
+
+     #pic1-patricinhas {
+       margin-bottom: 10px;
+        border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+  
+
+     #pic2-patricinhas {
+       margin-bottom: 10px;
+        border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+
+     #pic4-patricinhas {
+      margin-bottom: 20px;
+       border-width: 1px;
+   border-style: solid;
+   border-color: #ffdbdb;
+     }
+
+     #pic3-patricinhas {
+         margin-bottom: 20px;
+         border-width: 1px;
+         border-style: solid;
+         border-color: #ffdbdb;
+     }
+
+     #border-curiosidades {
+        margin-bottom: 10px;
+        color: #3b4664;
+        margin-top: 10px;
+     }
+
+     .patricinhas-curiosidades {
+        max-width: 100%;
+     }
+
+     .info-patricinhas-color {
+        color: #3b4664;
+     }
+
+     #link-patricinhas {
+          margin-left: 20px;
+          margin-bottom: 20px;
+           color: #3b4664;
+     }
+
+      a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    background-color: #ffdbdb;
+}
+
+    #nome-filme {
+      margin-top: 150px;
+      color: #3b4664;
+ }
+
+  div#fashion.border-top {
+   border-color: #ffdbdb !important;
+    margin-top: 10px;
+         color: #3b4664;
+ }
+
+  div.fashion.border-top {
+   border-color: #ffdbdb !important;
+    margin-top: 10px;
+         color: #3b4664;
+ }
+
+  .avaliacao {
+       border-bottom: 1px solid #ffdbdb;
+       color: #3b4664;
+       margin-top: 10px;
+       margin-left: 5px;
+ }
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 > label {
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+}
+
+.feedback1 {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rating1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+}
+a#link-patricinhas {
+   padding: 10px;
+ }
+     </style>
+
+<script>
+  var peopleAvaliation = 5; 
+  var media = 4.5 ;
+ function Rating(value) {
+   var originalMedia = media * peopleAvaliation;
+   peopleAvaliation++;
+   var finalMedia = (originalMedia + value) / peopleAvaliation;
+   var final = parseFloat(finalMedia.toFixed(1));
+
+   document.getElementById("valorConvertido").innerHTML = (final+" ("+peopleAvaliation+")");
+   media = final;
+ }
+</script>
+    <script language="javascript" src="../javascript/pesquisa-logica.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <div id="interface">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-blue">
+          <a class="navbar-brand" href="../index.html">Fancy For U</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle ml-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filmes</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="../anos-70.html">70's</a>
+                          <a class="dropdown-item" href="../anos-80.html">80's</a>
+                          <a class="dropdown-item" href="../anos-90.html">90's</a>
+                          <a class="dropdown-item" href="../anos-2000.html">2000's</a>
+                      </div>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0" action="../pesquisa.html" method="get">
+                  <input class="form-control mr-sm-2 ml-2 my-3" type="search" placeholder="Search" aria-label="Search" id="search" name="search">
+                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit" class="button-search">
+                      <img src="../images/pesquisa-icone.png" class="search-image" alt="">
+                  </button>
+              </form>
+              <a href="../quiz.html"><button class="btn btn-outline-light font-weight-bold my-2 ml-2 " type="button" > Quiz</button></a>
+          </div>
+      </nav>
+  </div>
+
+
+ <div class="container">
+  <div class="row">
+
+  <div class="col-sm-12 col-md-12 col-lg-4">
+ <img id="patricinhas-photo" src="https://i.pinimg.com/originals/3c/ca/23/3cca230e7bb4407b46e46f1f79176ecd.jpg" style="width:100%" class="img-fluid img-rounded">
+ </div>
+
+  <div class="col-sm-12 col-md-12 col-lg-8">
+ <h1 id="nome-filme"><strong>As Patricinhas de Beverly Hills</strong></h1>
+ <div class="info-patricinhas"><strong class="info-patricinhas-color">Lançamento:</strong> 19 de julho de 1995.  <br>
+ <strong class="info-patricinhas-color">Direção:</strong> Amy Heckerling.<br>
+ <strong class="info-patricinhas-color">Roteiro:</strong> John Quaintance, Jessica Bendinger.<br>
+ <strong class="info-patricinhas-color">Elenco:</strong>  Alicia Silverstone, Stacey Dash,  Brittany Murphy.<br>
+ <strong class="info-patricinhas-color">Gênero:</strong> Comédia / Romance<br></div>
+
+ <h3 id="sinopse-patricinhas"><strong>Sinopse</strong></h3>
+
+ <p class="sinopse" class="text-justify"  id="patricinhas-sinopse">Ainda inteligente e charmoso, As Patricinhas de Beverly Hills recebe uma renovada e espirituosa versão,
+nesta nova Edição Vale-Tudo! para colecionadores. Alicia Silverstone brilha como Cher, a estudante de Beverly Hills,
+de 15 anos, que adora armar namoros e só pensa em shopping e rapazes, ou melhor, muito mais em shopping. 
+Também estrelado por Brittany Murphy, como uma feiosa aluna recém-transferida, Jeremy Sisto, como um par em potencial, 
+e Paul Rudd, como o gatíssimo e sensível meio-irmão de Cher, As Patricinhas de Beverly Hills estão de volta, 
+para arrebatar os corações de uma nova geração."</p>
+ </div> </div>
+
+    <div class="container">
+ <div id="fashion" class="row border-top">
+ <div class="col-sm-12 col-md-12 col-lg-8" id="fashion"><h1><strong>Moda</strong></h1>
+   </div> </div> </div>
+
+ <div class="row">
+
+      <div class="col-sm-12 col-md-6 col-lg-6"><img  id="pic1-patricinhas"src="https://cdn.discordapp.com/attachments/700107574493577260/911052355137597460/hillspic5nova.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>  
+      <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic2-patricinhas" src="https://cdn.discordapp.com/attachments/700107574493577260/911049289885700176/hillspic1novo.jpg" style="width:100%" class="img-fluid img-rounded"> 
+      </div>
+      <div class="w-100"></div>
+      <div class="col-sm-12 col-md-6 col-lg-6"><img  id="pic3-patricinhas"src="https://cdn.discordapp.com/attachments/700107574493577260/911049472790888468/hillspic3novo.jpeg" style="width:100%" class="img-fluid img-rounded">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6"><img id="pic4-patricinhas"src="https://cdn.discordapp.com/attachments/700107574493577260/911048226734506014/hillspic4novo.jpg" style="width:100%" class="img-fluid img-rounded">
+      </div>
+    </div>
+
+       <div class="container">
+ <div class="row border-top fashion">
+ <h1 class="col-sm-12 col-md-12 col-lg-8"  id="border-curiosidades"><strong>Curiosidades</strong></h1>
+ </div></div>
+
+ <ul>
+  <li><p class="patricinhas-curiosidades">O filme foi filmado em 40 dias. O filme teve uma excelente pré-produção o que fez com que ele fosse gravado rapidamente. Foram apenas 40 dias de gravações. É bom lembrar que o filme não depende de muitos cenários caros, apenas uma escola e grandes mansões, o que facilitou a gravação do mesmo.</p> </li>
+
+  <li><p class="patricinhas-curiosidades">Alicia parece ter nascido para interpretar Cher, aliás a diretora também acha isso. Porém, a diretora Amy Heckerling – logo que viu Alicia Silverstone nos clipes da banda Aerosmith e encantou-se e quis de qualquer jeito a atriz no papel, e não pensou em outra pessoa desde então. Ela apenas marcou um almoço com a atriz e aí tivemos o nascimento de Cher.</p> </li>
+
+  <li><p class="patricinhas-curiosidades">A escola utilizada para a gravação do filme foi uma escola encontrada em Beverly Hills. O mais engraçado é que Alicia Silverstone e Breckin Meyer (Travis) estudaram naquela escola, o que facilitou a atuação. Eles só precisavam lembrar dos seus tempos de escola para viverem como adolescentes.</p> </li>
+
+  <li><p class="patricinhas-curiosidades">A cena em que Cher, Dionne e Murray estão desesperados e gritando no carro, foi totalmente inspirada em Amy Heckerling, a diretora do filme. Aparentemente, Amy também fica muito nervosa quando está no volante. Ela sempre acaba gritando quando se vê em uma situação de muita pressão.</p> </li>
+
+  <li><p class="patricinhas-curiosidades">Se você for mais atento para a troca de figurino e ter papel e caneta em mãos, provavelmente ver um número surpreendente. De acordo com a produção do filme, foram 63 roupas diferentes, mesmo que o conjuntinho amarelo xadrez tenha ficado no coração de muitas garotas nos anos 90.</p> </li>
+
+  <li><p class="patricinhas-curiosidades">O mais interessante é que esse foi o primeiro trabalho de Mona May, que se consagraria nessa profissão, cuidando do figurino de diversos outros filmes e séries, como, Encantada (2007), Santa Clatira Diet (2017) e Esposa de Mentirinha (2011).</p> </li>
+
+  <li><p class="patricinhas-curiosidades">O famoso conjuntinho xadrez amarelo da Cher é um Jean Paul Gaultier que deu o maior trabalho para achar, mas assim que entrou em cena virou um favorito! “Nós provavelmente tentamos umas 15 roupas diferentes. Todas com estampa xadrez, eram vestidinhos, macaquinhos, coisas diferentes. Quando colocamos o amarelo foi ‘Uau, é esse!’”, conta Mona May, diretora de figurino.
+</p> </li>
+  </ul>
+    <a id="link-patricinhas" class="button"target="_blank" href="https://www.dosedeilusao.com/25-curiosidades-sobre-o-filme-as-patricinhas-de-beverly-hills/#:~:text=25%20curiosidades%20sobre%20o%20filme%20%E2%80%9CAs%20Patricinhas%20de,a%20atriz%20Sarah%20Michelle%20Gellar%20teve%20que%20">Saber mais+</a>
+</div>
+</div>
+
+<div class="media"></div>
+<div class="container">
+      <h1 class="avaliacao" id="valor"><strong>Avaliações de usuários</strong></h1>
+          <div class="feedback">
+              <div class="rating">
+                <h3 id="valorConvertido"></h3>
+              <input type="radio" name="rating" id="rating-5">
+              <label for="rating-5" type="submit" onclick="Rating(5)" class="rate-1" size="2"></label>
+              <input type="radio" name="rating" id="rating-4" size="2">
+              <label for="rating-4" type="submit" onclick="Rating(4)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-3" size="2">
+              <label for="rating-3" type="submit" onclick="Rating(3)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-2" size="2">
+              <label for="rating-2" type="submit" onclick="Rating(2)" class="rate-1"></label>
+              <input type="radio" name="rating" id="rating-1" size="2">
+              <label for="rating-1" type="submit" onclick="Rating(1)" class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+       <div class="container">
+      <h1 class="avaliacao"><strong>Avaliação crítica</strong></h1>
+          <div class="feedback1">
+              <div class="rating1">
+              <h2 class="avaliacao-critica">4.1</h2>
+              <div type="radio" name="rating1"></div>
+              <label for="rating-15" type="submit"size="2"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-14" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-13" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-12" type="submit" class="rate-1"></label>
+              <div type="radio" name="rating1" size="2"></div>
+              <label for="rating-11" type="submit"  class="rate-1"></label> 
+            </div>
+        </div>
+     </div>
+    </div>
+
+
+     <footer id="footnote" class="text-center text-lg-start bg-rose">
+        <div class="bg-rose">
+            <div class="ol-lg-6 col-md-12 mb-4 mb-md-0 border-bottom">
+                <h4 class="me-5"><a href="index.html">Fancy For U</a></h4>
+            </div>
+            <div class="container p-4 ">
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Quem somos?</h5>
+                        <p class="text">
+                            Uma equipe de 3 estudantes com objetivos de montar um site com os principios fundamentais de programação, almejamos todo conhecimento que iremos adquirir nesta jornada.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase font-weight-bold">Projeto 2° ano</h5>
+                        <ul>
+                            <li>Josineudo Arruda</li>
+                            <li>Jéssica Raya</li>
+                            <li>Sabrina Ramos</li>
+                        </ul>
+                        <h5>IFSP - Campus São Paulo</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgb(59,70,100,.8); color:#ffffff">Copyright &copy; 2021 - by Josineudo Arruda, Jéssica Raya e Sabrina Ramos
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
